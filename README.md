@@ -86,11 +86,12 @@ The site is fully built and functional, but a few things are placeholders that *
 
 | Item | Where | What to do |
 |---|---|---|
-| Amazon Associate tag | Every `Check Price on Amazon` link (`?tag=YOURTAG-20`) | Replace `YOURTAG-20` with your real Amazon Associates tracking ID across all files. |
-| Product photos | `assets/images/product-placeholder.svg` references in review/comparison/pillar pages | Replace with real product photography or licensed images (with descriptive alt text) once available. |
-| Analytics | Not included by default | Add a privacy-conscious analytics snippet (e.g. Cloudflare Web Analytics, which requires no cookie banner) if you want traffic data. |
-| Legal pages | [privacy-policy/index.html](privacy-policy/index.html), [affiliate-disclosure/index.html](affiliate-disclosure/index.html), [medical-disclaimer/index.html](medical-disclaimer/index.html) | Templates are complete and accurate to how the site actually works, but have them reviewed against your local jurisdiction's requirements before launch. |
-| Google Search Console | External | Verify the domain and submit `sitemap.xml` once live. |
+| Amazon Associate tag | Every `Check Price on Amazon` link | Done — all 20 links use the real approved tag `flatfeetshoeg-20`. |
+| Analytics | `assets/js/analytics.js` + gtag loader in every `<head>` | Done — GA4 (`G-TYN4PKDMQK`), verified live sending real hits with zero CSP violations. |
+| Google Search Console | External | Done — domain verified via DNS TXT record (no code changes needed for that method). |
+| Domain + hosting | Cloudflare Pages | Done — live at `flatfeetshoeguide.com`, deployed from [github.com/arshak94ners/flatfeetshoeguide](https://github.com/arshak94ners/flatfeetshoeguide), auto-deploys on every push to `main`. |
+| Product photos | `assets/images/product-placeholder.svg` references in review/comparison/pillar pages | Still placeholders. Replace with real product photography or licensed images (with descriptive alt text) once available — highest-value remaining item. |
+| Legal pages | [privacy-policy/index.html](privacy-policy/index.html), [affiliate-disclosure/index.html](affiliate-disclosure/index.html), [medical-disclaimer/index.html](medical-disclaimer/index.html) | Content is complete and accurate to how the site actually works, but still worth a quick pass against your local jurisdiction's requirements. |
 | `og-default.png` | `assets/images/` | A branded placeholder is included (1200×630). Swap for your own design if you want something more custom. |
 
 Contact is intentionally simple: the [contact page](contact/index.html) is a direct `mailto:` link to `arshak94nersisyan@gmail.com` — no form, no third-party form-processing service, no extra account to manage. If you'd rather not expose that inbox directly to spam crawlers later, consider a forwarding alias, but nothing needs to change in the code to launch.
