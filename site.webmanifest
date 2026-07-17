@@ -1,0 +1,21 @@
+{
+  "name": "Flat Feet Shoe Guide",
+  "short_name": "Flat Feet Shoe Guide",
+  "description": "Honest, first-hand reviews and buying guides for shoes for flat feet and low arches.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6e6e",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

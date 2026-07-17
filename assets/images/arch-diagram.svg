@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="archTitle archDesc">
+  <title id="archTitle">Illustration comparing a normal foot arch to a flat foot arch</title>
+  <desc id="archDesc">Two footprint outlines side by side: one showing a visible arch curve, the other showing a flat foot with little to no arch curve.</desc>
+  <rect width="400" height="260" fill="none"/>
+  <text x="90" y="24" font-family="Georgia, serif" font-size="15" fill="#55666a" text-anchor="middle">Normal arch</text>
+  <path d="M60 40 C40 70 40 100 55 130 C65 150 45 165 50 190 C55 215 90 225 110 215 C125 208 120 185 125 165 C130 145 150 140 150 115 C150 90 135 70 120 55 C105 42 80 35 60 40 Z" fill="#0d6e6e" opacity="0.18" stroke="#0d6e6e" stroke-width="3"/>
+  <text x="310" y="24" font-family="Georgia, serif" font-size="15" fill="#55666a" text-anchor="middle">Flat arch</text>
+  <path d="M270 40 C250 65 248 90 255 130 C260 155 255 170 260 190 C265 215 300 225 320 215 C335 208 330 190 332 165 C334 145 340 135 340 110 C340 88 330 68 315 55 C300 42 285 35 270 40 Z" fill="#d9791f" opacity="0.18" stroke="#d9791f" stroke-width="3"/>
+</svg>

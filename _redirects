@@ -1,0 +1,26 @@
+# Canonicalize on the apex domain (no www). Only takes effect once www.flatfeetshoeguide.com
+# is also added as a custom domain on this Cloudflare Pages project — see README.
+https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
+
+# Defensive safety net: this site was restructured from .html URLs to clean extensionless
+# URLs before launch. If any old .html link is ever shared or indexed, send it to the
+# clean equivalent instead of 404ing.
+/index.html                                                          /  301
+/about.html                                                          /about/  301
+/contact.html                                                        /contact/  301
+/privacy-policy.html                                                 /privacy-policy/  301
+/affiliate-disclosure.html                                           /affiliate-disclosure/  301
+/medical-disclaimer.html                                             /medical-disclaimer/  301
+/best-shoes-for-flat-feet.html                                       /best-shoes-for-flat-feet/  301
+/best-running-shoes-flat-feet.html                                   /best-running-shoes-flat-feet/  301
+/best-walking-shoes-flat-feet.html                                   /best-walking-shoes-flat-feet/  301
+/best-work-shoes-flat-feet.html                                      /best-work-shoes-flat-feet/  301
+/best-gym-shoes-flat-feet.html                                       /best-gym-shoes-flat-feet/  301
+/best-sandals-for-flat-feet.html                                     /best-sandals-for-flat-feet/  301
+/best-insoles-for-flat-feet.html                                     /best-insoles-for-flat-feet/  301
+/shoe-size-conversion-chart.html                                     /shoe-size-conversion-chart/  301
+/shoe-reviews/example-shoe-review.html                                /shoe-reviews/example-shoe-review/  301
+/comparisons/example-comparison.html                                  /comparisons/example-comparison/  301
+/guides/example-buying-guide.html                                     /guides/example-buying-guide/  301
+/guides/flat-feet-vs-plantar-fasciitis-vs-overpronation.html          /guides/flat-feet-vs-plantar-fasciitis-vs-overpronation/  301
+/guides/shoe-and-foot-glossary.html                                   /guides/shoe-and-foot-glossary/  301
