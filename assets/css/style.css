@@ -365,6 +365,39 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .affiliate-cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-top: var(--space-2); }
 .price-note { font-size: 0.85rem; color: var(--color-text-muted); }
 
+/* ---------- Score card ---------- */
+.score-card {
+  display: grid;
+  gap: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  margin-block: var(--space-3);
+  background: var(--color-bg-alt);
+}
+@media (min-width: 640px) {
+  .score-card { grid-template-columns: auto 1fr; align-items: center; }
+}
+.score-overall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+.score-overall .score-value { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: var(--color-primary-dark); line-height: 1; }
+.score-overall .score-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-top: 0.35rem; }
+.score-bars { display: grid; gap: 0.6rem; }
+.score-bar { display: grid; grid-template-columns: 9rem 1fr 2.5rem; align-items: center; gap: 0.6rem; font-size: 0.9rem; }
+.score-bar-label { font-weight: 600; }
+.score-bar-track { background: var(--color-border); border-radius: 999px; height: 0.5rem; overflow: hidden; }
+.score-bar-fill { background: var(--color-primary); height: 100%; border-radius: 999px; }
+.score-bar-value { text-align: right; font-variant-numeric: tabular-nums; color: var(--color-text-muted); }
+
 /* ---------- Tables (comparisons) ---------- */
 .table-wrap { overflow-x: auto; border: 1px solid var(--color-border); border-radius: var(--radius); }
 table.compare {
@@ -650,6 +683,47 @@ hr.divider { border: none; border-top: 1px solid var(--color-border); margin-blo
 .finder-product img { margin-inline: auto; border-radius: var(--radius-sm); }
 .finder-product h3 { margin-top: var(--space-2); }
 .finder-product-ctas { display: flex; flex-direction: column; gap: 0.5rem; margin-top: var(--space-2); }
+
+/* ---------- Compare tool ---------- */
+.compare-pickers {
+  display: grid;
+  gap: var(--space-2);
+  margin-block: var(--space-3);
+}
+@media (min-width: 640px) {
+  .compare-pickers { grid-template-columns: repeat(3, 1fr); }
+}
+.compare-picker label { font-weight: 700; display: block; margin-bottom: 0.35rem; font-size: 0.9rem; }
+.compare-picker select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+}
+table.compare img { border-radius: var(--radius-sm); margin-bottom: 0.5rem; }
+
+/* ---------- Shoe database filters ---------- */
+.db-filters {
+  display: grid;
+  gap: var(--space-2);
+  margin-block: var(--space-3);
+}
+@media (min-width: 640px) {
+  .db-filters { grid-template-columns: repeat(3, 1fr); }
+}
+.db-filter label { font-weight: 700; display: block; margin-bottom: 0.35rem; font-size: 0.9rem; }
+.db-filter select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+}
 
 /* ---------- Glossary ---------- */
 .glossary-list { max-width: 74ch; }

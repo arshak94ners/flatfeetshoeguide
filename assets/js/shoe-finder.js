@@ -1,5 +1,6 @@
 /*
  * Shoe Finder quiz — flatfeetshoeguide.com
+ * Requires products-data.js to be loaded first (defines FFSG_PRODUCTS).
  *
  * Every question here changes at least one real recommendation path.
  * We deliberately don't ask things like gender, since our current
@@ -11,115 +12,7 @@
 (function () {
   "use strict";
 
-  var AMZ_TAG_SUFFIX = "&linkCode=ll2&tag=flatfeetshoeg-20&language=en_US&ref_=as_li_ss_tl";
-
-  var PRODUCTS = {
-    brooksAdrenaline: {
-      name: "Brooks Adrenaline GTS",
-      img: "/assets/images/products/brooks-adrenaline-gts.webp",
-      alt: "Brooks Adrenaline GTS stability running shoe",
-      review: "/shoe-reviews/example-shoe-review/",
-      href: "https://www.amazon.com/gp/aw/d/B0DM37CZS8?_encoding=UTF8&linkCode=ll2&tag=flatfeetshoeg-20&linkId=544401b6d8ddfd973c1d03638211f1a8&language=en_US&ref_=as_li_ss_tl"
-    },
-    asicsGelKayano: {
-      name: "ASICS Gel-Kayano",
-      img: "/assets/images/products/asics-gel-kayano.webp",
-      alt: "ASICS Gel-Kayano stability running shoe",
-      review: "/shoe-reviews/asics-gel-kayano-review/",
-      href: "https://www.amazon.com/ASICS-Gel-Kayano-Running-Shoes-Black/dp/B0GY9M595L?linkCode=ll2&tag=flatfeetshoeg-20&linkId=1c115f037a1c342274cea27287461985&language=en_US&ref_=as_li_ss_tl"
-    },
-    sauconyGuide: {
-      name: "Saucony Guide",
-      img: "/assets/images/products/saucony-guide.webp",
-      alt: "Saucony Guide running shoe",
-      review: "/shoe-reviews/saucony-guide-review/",
-      href: "https://www.amazon.com/Saucony-Mens-Guide-Sneaker-SKYDIVER/dp/B0D31SKTH8?linkCode=ll2&tag=flatfeetshoeg-20&linkId=189c7beeee8a4a7c50fb37b2f52533d0&language=en_US&ref_=as_li_ss_tl"
-    },
-    newBalance928: {
-      name: "New Balance 928",
-      img: "/assets/images/products/new-balance-928.webp",
-      alt: "New Balance 928 walking shoe",
-      review: "/shoe-reviews/new-balance-928-review/",
-      href: "https://www.amazon.com/New-Balance-928v3-Walking-Black/dp/B01MXNYU7O?linkCode=ll2&tag=flatfeetshoeg-20&linkId=220f5270335c803b22d9694085de911b&language=en_US&ref_=as_li_ss_tl"
-    },
-    hokaBondi: {
-      name: "Hoka Bondi",
-      img: "/assets/images/products/hoka-bondi.webp",
-      alt: "Hoka Bondi walking shoe",
-      review: "/shoe-reviews/hoka-bondi-review/",
-      href: "https://www.amazon.com/Hoka-Bondi-Sneaker-Black-White/dp/B0D5GCZYVJ?linkCode=ll2&tag=flatfeetshoeg-20&linkId=154e623ea0a5e8ea2442f31050983005&language=en_US&ref_=as_li_ss_tl"
-    },
-    skechersWork: {
-      name: "Skechers Work Relaxed Fit",
-      img: "/assets/images/products/skechers-work-relaxed-fit.webp",
-      alt: "Skechers Work slip-resistant shoe",
-      review: "/shoe-reviews/skechers-work-relaxed-fit-review/",
-      href: "https://www.amazon.com/Shoes-Crews-Everlight-Mens-Slip/dp/B0CXF9DRPP?linkCode=ll2&tag=flatfeetshoeg-20&linkId=af446db8bc8d2bd964d1446ed219c065&language=en_US&ref_=as_li_ss_tl"
-    },
-    timberlandPro: {
-      name: "Timberland PRO Composite Toe",
-      img: "/assets/images/products/timberland-pro-composite-toe.webp",
-      alt: "Timberland PRO composite toe work shoe",
-      review: "/shoe-reviews/timberland-pro-composite-toe-review/",
-      href: "https://www.amazon.com/Timberland-PRO-Composite-Waterproof-Black-2024/dp/B0CJZXPYTL?linkCode=ll2&tag=flatfeetshoeg-20&linkId=9b70333a6609624dbac3ae8c3432671a&language=en_US&ref_=as_li_ss_tl"
-    },
-    nikeMetcon: {
-      name: "Nike Metcon",
-      img: "/assets/images/products/nike-metcon.webp",
-      alt: "Nike Metcon training shoe",
-      review: "/shoe-reviews/nike-metcon-review/",
-      href: "https://www.amazon.com/Nike-Metcon-Sneaker-Black-Coconut/dp/B0DJGC9CFF?linkCode=ll2&tag=flatfeetshoeg-20&linkId=e19a8b2fe7dee6946ef4894427701202&language=en_US&ref_=as_li_ss_tl"
-    },
-    asicsGelQuantum: {
-      name: "ASICS Gel-Quantum",
-      img: "/assets/images/products/asics-gel-quantum.webp",
-      alt: "ASICS Gel-Quantum cross-training shoe",
-      review: "/shoe-reviews/asics-gel-quantum-review/",
-      href: "https://www.amazon.com/Asics-Quantum-1203A305011-Trainers-Classic/dp/B0F5BM3H36?linkCode=ll2&tag=flatfeetshoeg-20&linkId=f378b2848fa2f4bdcc5ddba10656a63d&language=en_US&ref_=as_li_ss_tl"
-    },
-    birkenstockArizona: {
-      name: "Birkenstock Arizona",
-      img: "/assets/images/products/birkenstock-arizona.webp",
-      alt: "Birkenstock Arizona sandals",
-      review: "/shoe-reviews/birkenstock-arizona-review/",
-      href: "https://www.amazon.com/Birkenstock-Arizona-Unisex-Suede-Sandal/dp/B000W0GWYQ?linkCode=ll2&tag=flatfeetshoeg-20&linkId=49ee020215bf5f72c035bb44cac23af4&language=en_US&ref_=as_li_ss_tl"
-    },
-    oofosOoahh: {
-      name: "OOFOS OOahh",
-      img: "/assets/images/products/oofos-ooahh.webp",
-      alt: "OOFOS OOahh recovery sandals",
-      review: "/shoe-reviews/oofos-ooahh-review/",
-      href: "https://www.amazon.com/OOFOS-Unisex-Ooahh-Slide-Sandal/dp/B00BRC4L14?linkCode=ll2&tag=flatfeetshoeg-20&linkId=1a9d9cebda9ba05c16969a587b084c31&language=en_US&ref_=as_li_ss_tl"
-    },
-    superfeetGreen: {
-      name: "Superfeet GREEN",
-      img: "/assets/images/products/superfeet-green.webp",
-      alt: "Superfeet GREEN insoles",
-      review: "/shoe-reviews/superfeet-green-review/",
-      href: "https://www.amazon.com/Superfeet-Insoles-Professional-Grade-Orthotic-Green/dp/B0033BPBD4?linkCode=ll2&tag=flatfeetshoeg-20&linkId=7bc94e78dca91b007a245488878d9681&language=en_US&ref_=as_li_ss_tl"
-    },
-    powerstepPinnacle: {
-      name: "Powerstep Pinnacle",
-      img: "/assets/images/products/powerstep-pinnacle.webp",
-      alt: "Powerstep Pinnacle orthotic insoles",
-      review: "/shoe-reviews/powerstep-pinnacle-review/",
-      href: "https://www.amazon.com/PowerStep-Pinnacle-Orthotics-Podiatrist-Recommended/dp/B000KPKMU8?linkCode=ll2&tag=flatfeetshoeg-20&linkId=a147d09ab298c5ca0d07b477e1619f9e&language=en_US&ref_=as_li_ss_tl"
-    },
-    sofSole: {
-      name: "Sof Sole Plantar Fasciitis Insoles",
-      img: "/assets/images/products/sof-sole-plantar-fasciitis-insoles.webp",
-      alt: "Sof Sole plantar fasciitis insoles",
-      review: "/shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/",
-      href: "https://www.amazon.com/Sof-Sole-Performance-Full-length-11-12-5/dp/B08J7X75X3?linkCode=ll2&tag=flatfeetshoeg-20&linkId=83fa7ab032ced82202975127b88f75ce&language=en_US&ref_=as_li_ss_tl"
-    },
-    newBalance990: {
-      name: "New Balance 990 Series",
-      img: "/assets/images/products/new-balance-990.webp",
-      alt: "New Balance 990 series everyday support sneaker",
-      review: "/shoe-reviews/new-balance-990-review/",
-      href: "https://www.amazon.com/New-Balance-Running-Reflection-X-Wide/dp/B0D2BPNGP5?linkCode=ll2&tag=flatfeetshoeg-20&linkId=8e9a8b0a3a3f37cb6ad84219e1c3bb45&language=en_US&ref_=as_li_ss_tl"
-    }
-  };
+  var PRODUCTS = FFSG_PRODUCTS;
 
   // Each step function receives the answers collected so far and
   // returns null (skip this step) or a step definition to render.
