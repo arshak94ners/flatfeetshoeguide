@@ -388,9 +388,13 @@
 
       var stepNum = history.length + 1;
       var total = steps.length;
+      // The total is only known once activity (step 1) is answered, since
+      // every later step's visibility depends on it. Showing "of 1" on the
+      // very first question would falsely imply it's the only question.
+      var progressLabel = history.length === 0 ? "Let's start" : "Question " + stepNum + " of " + total;
 
       var html =
-        '<div class="finder-progress">Question ' + stepNum + " of " + total + "</div>" +
+        '<div class="finder-progress">' + progressLabel + "</div>" +
         "<h2>" + escapeHtml(step.question) + "</h2>" +
         '<div class="finder-options" role="group" aria-label="' + escapeHtml(step.question) + '">';
 
