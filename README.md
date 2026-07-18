@@ -90,7 +90,7 @@ The site is fully built and functional, but a few things are placeholders that *
 | Analytics | `assets/js/analytics.js` + gtag loader in every `<head>` | Done — GA4 (`G-TYN4PKDMQK`), verified live sending real hits with zero CSP violations. |
 | Google Search Console | External | Done — domain verified via DNS TXT record (no code changes needed for that method). |
 | Domain + hosting | Cloudflare Pages | Done — live at `flatfeetshoeguide.com`, deployed from [github.com/arshak94ners/flatfeetshoeguide](https://github.com/arshak94ners/flatfeetshoeguide), auto-deploys on every push to `main`. |
-| Product photos | `assets/images/product-placeholder.svg` references in review/comparison/pillar pages | Still placeholders. Replace with real product photography or licensed images (with descriptive alt text) once available — highest-value remaining item. |
+| Product photos | `assets/images/products/` | Done — all 15 products have real photos sourced via Amazon SiteStripe, with matching `/dp/` affiliate links replacing the earlier placeholders and generic search links. |
 | Legal pages | [privacy-policy/index.html](privacy-policy/index.html), [affiliate-disclosure/index.html](affiliate-disclosure/index.html), [medical-disclaimer/index.html](medical-disclaimer/index.html) | Content is complete and accurate to how the site actually works, but still worth a quick pass against your local jurisdiction's requirements. |
 | `og-default.png` | `assets/images/` | A branded placeholder is included (1200×630). Swap for your own design if you want something more custom. |
 
