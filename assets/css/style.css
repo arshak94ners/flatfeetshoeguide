@@ -8,8 +8,8 @@
   --color-primary: #0d6e6e;
   --color-primary-dark: #084f4f;
   --color-primary-light: #e6f2f1;
-  --color-accent: #d9791f;
-  --color-accent-dark: #b5620f;
+  --color-accent: #a8560d;
+  --color-accent-dark: #7a3d08;
   --color-text: #202a2c;
   --color-text-muted: #55666a;
   --color-bg: #ffffff;
@@ -17,7 +17,8 @@
   --color-border: #e0e8e7;
   --color-success: #1f7a4d;
   --color-warn: #a34a1a;
-  --color-star: #d9791f;
+  --color-star: #a8560d;
+  --color-footer-bg: #06302f;
 
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-heading: Georgia, "Times New Roman", ui-serif, serif;
@@ -40,8 +41,6 @@
     --color-primary: #2ba39a;
     --color-primary-dark: #1c7a73;
     --color-primary-light: #0f2727;
-    --color-accent: #e79038;
-    --color-accent-dark: #c97a24;
     --color-text: #e8edec;
     --color-text-muted: #a6b4b3;
     --color-bg: #12181a;
@@ -474,7 +473,7 @@ table.compare tbody tr:hover { background: var(--color-bg-alt); }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--color-primary-dark);
+  background: var(--color-footer-bg);
   color: #f0f5f4;
   padding-block: var(--space-5) var(--space-4);
   margin-top: var(--space-5);
@@ -497,6 +496,19 @@ table.compare tbody tr:hover { background: var(--color-bg-alt); }
   flex-wrap: wrap;
   gap: var(--space-2);
   justify-content: space-between;
+}
+
+/* ---------- Dark-mode contrast fixes ----------
+   --color-primary-dark is intentionally lighter in dark mode so it still
+   works as a background (e.g. .skip-link, .back-to-top). But a few rules
+   below use it as FOREGROUND text against the page background, which
+   fails WCAG AA (3.48:1) with that lighter dark-mode value. Point those
+   specific rules at --color-primary instead, which is light enough to
+   read clearly against the dark background. */
+@media (prefers-color-scheme: dark) {
+  .btn-secondary { color: var(--color-primary); }
+  .main-nav a[aria-current="page"] { color: var(--color-primary); }
+  .calc-result-item .calc-value { color: var(--color-primary); }
 }
 
 /* ---------- Misc ---------- */
