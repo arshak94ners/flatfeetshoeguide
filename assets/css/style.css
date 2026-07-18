@@ -580,6 +580,77 @@ hr.divider { border: none; border-top: 1px solid var(--color-border); margin-blo
 .calc-error { color: var(--color-warn); font-weight: 600; margin-top: var(--space-2); }
 .calc-result[hidden] { display: none; }
 
+/* ---------- Shoe Finder quiz ---------- */
+#shoe-finder {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  margin-block: var(--space-3);
+}
+.finder-progress {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+.finder-options {
+  display: grid;
+  gap: var(--space-2);
+  margin-block: var(--space-3);
+}
+@media (min-width: 640px) {
+  .finder-options { grid-template-columns: repeat(2, 1fr); }
+}
+.finder-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.finder-option:hover { border-color: var(--color-primary); transform: translateY(-2px); }
+.finder-option:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+.finder-back {
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  padding: 0.5rem 0;
+  text-decoration: underline;
+}
+.finder-result .eyebrow { display: block; margin-bottom: 0.5rem; }
+.finder-products {
+  display: grid;
+  gap: var(--space-3);
+  margin-block: var(--space-3);
+}
+@media (min-width: 640px) {
+  .finder-products { grid-template-columns: repeat(2, 1fr); }
+}
+.finder-product {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  text-align: center;
+}
+.finder-product .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-primary-dark); background: var(--color-primary-light); padding: 0.2rem 0.55rem; border-radius: 999px; margin-bottom: 0.75rem; }
+.finder-product img { margin-inline: auto; border-radius: var(--radius-sm); }
+.finder-product h3 { margin-top: var(--space-2); }
+.finder-product-ctas { display: flex; flex-direction: column; gap: 0.5rem; margin-top: var(--space-2); }
+
 /* ---------- Glossary ---------- */
 .glossary-list { max-width: 74ch; }
 .glossary-list dt {
