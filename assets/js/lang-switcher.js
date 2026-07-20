@@ -1,15 +1,10 @@
 (function () {
   "use strict";
 
-  var LANGS = ["hy", "az", "be", "et", "ka", "kk", "ky", "lv", "lt", "ro", "ru", "tg", "tk", "uk", "uz"];
+  var LANGS = ["hy", "kk", "ru", "uk", "uz"];
   var NAMES = {
-    en: "English", hy: "Հայերեն", az: "Azərbaycanca",
-    be: "Беларуская", et: "Eesti",
-    ka: "ქართული", kk: "Қазақша",
-    ky: "Кыргызча", lv: "Latviešu", lt: "Lietuvių",
-    ro: "Română", ru: "Русский",
-    tg: "Тоҷикй", tk: "Türkmençe",
-    uk: "Українська", uz: "Oʻzbekcha"
+    en: "English", hy: "Հայերեն", kk: "Қазақша",
+    ru: "Русский", uk: "Українська", uz: "Oʻzbekcha"
   };
 
   document.addEventListener("DOMContentLoaded", function () {
