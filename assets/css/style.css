@@ -207,6 +207,60 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .main-nav a[aria-current="page"] { color: var(--color-primary-dark); }
 }
 
+/* ---------- Language Switcher ---------- */
+.lang-switcher-item { position: relative; border-bottom: none !important; padding: var(--space-2) 0 0 !important; }
+.lang-switcher-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.lang-switcher-toggle svg { flex: none; transition: transform 0.15s ease; }
+.lang-switcher-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.lang-switcher-menu {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 0.15rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+.lang-switcher-menu[hidden] { display: none; }
+.lang-switcher-menu li { list-style: none; }
+.lang-switcher-menu a {
+  display: block;
+  padding: 0.4rem 0.55rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--color-text);
+  white-space: nowrap;
+  border-bottom: none;
+}
+.lang-switcher-menu a:hover, .lang-switcher-menu a:focus-visible { background: var(--color-bg-alt); }
+.lang-switcher-menu a[aria-current="true"] { color: var(--color-primary-dark); font-weight: 700; }
+
+@media (min-width: 860px) {
+  .lang-switcher-item { padding: 0 !important; }
+  .lang-switcher-menu { position: absolute; right: 0; top: 100%; width: max-content; margin-top: 0.5rem; }
+}
+@media (prefers-color-scheme: dark) {
+  .lang-switcher-menu a[aria-current="true"] { color: var(--color-primary); }
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
