@@ -414,7 +414,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .who-grid { display: grid; gap: var(--space-2); margin-block: var(--space-2); }
 @media (min-width: 640px) { .who-grid { grid-template-columns: 1fr 1fr; } }
 .who-grid > div { background: var(--color-bg-alt); border-radius: var(--radius-sm); padding: var(--space-2); }
-.who-grid h4 { font-size: 0.95rem; margin-bottom: 0.4rem; }
+.who-grid h3 { font-size: 0.95rem; margin-bottom: 0.4rem; }
 
 .affiliate-cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-top: var(--space-2); }
 .price-note { font-size: 0.85rem; color: var(--color-text-muted); }
@@ -543,7 +543,7 @@ table.compare tbody tr:hover { background: var(--color-bg-alt); }
   margin-block: var(--space-3);
 }
 .author-avatar { flex: none; width: 56px; height: 56px; border-radius: 50%; overflow: hidden; }
-.author-box h4 { margin-bottom: 0.2rem; }
+.author-box h3 { font-size: 1rem; margin-bottom: 0.2rem; }
 .author-box p { margin-bottom: 0; font-size: 0.95rem; }
 
 /* ---------- Article content ---------- */
@@ -567,6 +567,7 @@ table.compare tbody tr:hover { background: var(--color-bg-alt); }
 }
 .site-footer a { color: #dcece9; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
+.site-footer p { color: #dcece9; }
 .footer-grid { display: grid; gap: var(--space-3); grid-template-columns: 1fr; }
 @media (min-width: 700px) {
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
