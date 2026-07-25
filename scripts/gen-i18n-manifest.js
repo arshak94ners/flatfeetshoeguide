@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const ROOT = String.raw`C:\Users\Lenovo\Desktop\flatfeetshoeguide-live`;
-const LANGS = ["hy", "az", "be", "et", "ka", "kk", "ky", "lv", "lt", "ro", "ru", "tg", "tk", "uk", "uz"];
+const LANGS = ["hy", "kk", "ru", "uk", "uz"];
 
 function walk(dir, files) {
   files = files || [];
@@ -9,7 +9,7 @@ function walk(dir, files) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       if (LANGS.indexOf(entry.name) !== -1) continue;
-      if (entry.name === "scripts") continue;
+      if (entry.name === "scripts" || entry.name === ".git") continue;
       walk(full, files);
     } else if (entry.name === "index.html") {
       files.push(full);
