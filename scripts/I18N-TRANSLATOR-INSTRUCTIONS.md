@@ -36,7 +36,7 @@ For every page, in addition to text translation:
 3. Same for `og:url`.
 4. Replace the existing hreflang block (the group of `<link rel="alternate" hreflang="...">` tags right after canonical) with the **exact `hreflangBlock` string from the manifest for that page** — it's identical regardless of which language version you're building, so just paste it verbatim.
 5. Every **internal** link (nav, footer, breadcrumbs, in-content cross-links to other pages on this site, e.g. `href="/guides/"`, `href="/shoe-reviews/hoka-bondi-review/"`, `href="/shoe-finder/"`) gets prefixed with `/{code}`, e.g. `href="/{code}/guides/"`. Do **not** prefix: `/assets/...` paths, `/sitemap.xml`, `/ads.txt`, `/site.webmanifest`, `mailto:`, `tel:`, Amazon links, or anything already absolute (`https://...` other than flatfeetshoeguide.com self-links — those DO get the prefix).
-6. Script tags for `main.js`, `lang-switcher.js`, `analytics.js`, `products-data.js`, `shoe-finder.js`, `compare.js`, `shoe-database.js`, `lifespan-calculator.js` — keep the same `src` and version query string EXCEPT on the four tool pages (see below), where the tool-specific scripts point at your translated copies instead.
+6. Script tags for `analytics.js`, `products-data.js`, `shoe-finder.js`, `compare.js`, `shoe-database.js`, `lifespan-calculator.js` — keep the same `src` and version query string EXCEPT on the four tool pages (see below), where the tool-specific scripts point at your translated copies instead.
 7. Write the output file to `C:\Users\Lenovo\Desktop\flatfeetshoeguide-live\{code}\{relPath}index.html` (for the root page, that's `{code}\index.html`).
 
 ## The four interactive tool pages — extra step

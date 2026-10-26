@@ -1,0 +1,12 @@
+#!/bin/sh
+# Re-stamp the shared head/header/footer from /layout into every page before
+# each commit, so editing layout/*.html or layout/config.js is all it takes.
+# Enabled once per clone with:  git config core.hooksPath .githooks
+list=$(mktemp)
+LAYOUT_CHANGED_LIST="$list" node scripts/build.js --quiet || { rm -f "$list"; exit 1; }
+if [ -s "$list" ]; then
+  # Page paths never contain spaces, so plain xargs is safe here.
+  xargs git add -- < "$list"
+  echo "layout: re-stamped $(wc -l < "$list" | tr -d ' ') page(s) from /layout"
+fi
+rm -f "$list"

@@ -36,7 +36,7 @@ Every page lives at `slug/index.html` so it's served at a clean, extensionless U
 ├── sitemap/index.html                              Human-readable page listing every URL
 ├── assets/
 │   ├── css/style.css                               Entire design system (one file, no build step)
-│   ├── js/main.js                                  Mobile nav toggle + back-to-top button
+│   ├── js/main.js                                  Mobile nav, header dropdowns, language switcher, back-to-top
 │   ├── js/size-calculator.js                       Vanilla-JS size converter
 │   └── images/                                     Logo, favicon, OG image, diagrams, placeholders
 ├── 404.html                                        Stays at root — Cloudflare Pages looks for it here
@@ -112,20 +112,43 @@ This site is written by one person sharing personal experience (grade 2 flat fee
 - **Icons:** SVG favicon (scales cleanly, tiny), plus a generated 180×180 `apple-touch-icon.png` for iOS home-screen bookmarks, and `theme-color` meta tags matched to light/dark mode.
 - **Security headers (Lighthouse "Best Practices"):** CSP, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, and a locked-down `Permissions-Policy`, all in `_headers` — see the deployment section above for how this was verified.
 
+## Header, footer & shared tags (templates)
+
+The header, footer, and shared `<head>` tags (favicon, analytics, AdSense) are no longer edited page by page. They live in one place:
+
+| File | What it controls |
+|---|---|
+| [layout/config.js](layout/config.js) | Every menu link (header dropdowns, footer columns, CTA button) and every translated label, for all 6 languages |
+| [layout/header.html](layout/header.html) | Header markup (logo, menu, language switcher) |
+| [layout/footer.html](layout/footer.html) | Footer markup (columns, Amazon disclosure, language links, back-to-top, main.js) |
+| [layout/head.html](layout/head.html) | Shared `<head>` tags: icons, manifest, GA4, AdSense, analytics.js |
+
+Edit any of those, then run:
+
+```bash
+node scripts/build.js          # stamps the templates into every page
+node scripts/build.js --check  # only reports whether anything is out of date
+```
+
+Usually you don't even need to run it: a **pre-commit hook** (`.githooks/pre-commit`) runs the build and stages the updated pages on every `git commit`. Enable it once per clone with `git config core.hooksPath .githooks` (already done on this machine).
+
+How it works: each page has three marked regions (`<!-- layout:head -->`, `<!-- layout:header -->`, `<!-- layout:footer -->`). The build overwrites only what's between the markers, so page content is never touched. The output is still plain static HTML (real links that search engines crawl, no client-side includes), so Cloudflare Pages keeps deploying the repo exactly as before, with no build command.
+
+Menu links are written without a language prefix (`best-running-shoes-flat-feet/`). For each language the build links to the translated page if it exists and falls back to English otherwise; a link to a page that doesn't exist yet is skipped with a warning. The build also keeps these in sync automatically:
+
+- **hreflang tags:** listed only for translations that actually exist (never pointing at a redirect).
+- **sitemap.xml:** regenerated from the real pages, with `<lastmod>` taken from git history.
+- **_redirects language fallbacks:** `/ru/some-page/` → `/some-page/` until that translation exists.
+- **CSS/JS cache-busting:** every `/assets/...css|js` reference gets `?v=<content hash>`, so browsers pick up changes right after a deploy.
+
 ## Adding new content
 
-Every page follows the same pattern: copy the closest existing example folder, rename the slug, then edit the `<title>`, meta description, canonical URL, JSON-LD blocks, breadcrumb, and body content — and update every internal link you copied to point at the *new* slug, not the one you copied from.
+- **New roundup page ("best X for flat feet"):** add the products and page content to [scripts/buying-guides-data.js](scripts/buying-guides-data.js), run `node scripts/gen-buying-guides.js <slug>`, then add the slug to the menus in `layout/config.js` (and a homepage card if it deserves one).
+- **Any other page (review, comparison, guide):** copy the closest existing page folder, keep the three `<!-- layout:... -->` marker pairs, and edit the title, meta description, canonical, JSON-LD, breadcrumb, and body. The build fills in the header, footer, hreflang tags, and sitemap entry.
+- Link every new page from the human-readable [/sitemap/](sitemap/index.html) page so it isn't orphaned.
+- Run `node scripts/check-links.js` before pushing to catch broken internal links.
 
-- **New review:** copy `shoe-reviews/example-shoe-review/` to `shoe-reviews/your-slug/`, add a card to `shoe-reviews/index.html`, and add a `<url>` entry (with `<lastmod>`) to `sitemap.xml`.
-- **New comparison:** copy `comparisons/example-comparison/`, same pattern.
-- **New guide:** copy one of the `guides/*/` folders, same pattern.
-- **New pillar/category page:** copy one of the `best-*-flat-feet/` folders.
-
-Whichever type you add, also link it from `sitemap/index.html` (the human-readable one) so it isn't an orphan page, and remember the `sitemap.xml` entry — it's easy to skip since nothing breaks visibly if you forget it, it just means slower discovery by search engines.
-
-### A note on scaling past ~30-50 pages
-
-This project intentionally has no build step, per the project requirements — every page is hand-authored HTML with a duplicated header/footer. That's the right tradeoff at this size. If you grow past roughly 30-50 pages and find yourself editing the header or footer across dozens of files by hand, it's worth introducing a static site generator (e.g. Eleventy/11ty or Astro) purely as a *local build tool* — it still outputs the exact same plain HTML/CSS/JS to deploy on Cloudflare Pages, with no server or database involved, just a templating layer at build time. The clean-URL folder structure this site already uses (`slug/index.html`) is exactly what those generators produce by default, so migrating later is straightforward.
+Affiliate links use the plain `https://www.amazon.com/dp/<ASIN>?tag=flatfeetshoeg-20` format. Roundup pages deliberately don't show Amazon product photos, star ratings, or prices: the Associates agreement only allows those via SiteStripe or the Product Advertising API, and they go stale.
 
 ### Future features mentioned in the brief (not built yet, by design)
 

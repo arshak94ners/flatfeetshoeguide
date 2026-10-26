@@ -1,0 +1,2 @@
+# Shell hooks must keep LF endings or /bin/sh chokes on them under core.autocrlf.
+.githooks/* text eol=lf
