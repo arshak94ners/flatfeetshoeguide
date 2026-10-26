@@ -47,8 +47,12 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 # When a page has no translation yet for a given language, send /xx/page/ to the
 # English original instead of a 404. Temporary (302): a rule disappears on the next
 # build once that translation exists.
+/hy/best-basketball-shoes-for-flat-feet/  /best-basketball-shoes-for-flat-feet/  302
+/hy/best-boots-for-flat-feet/  /best-boots-for-flat-feet/  302
+/hy/best-compression-socks-for-flat-feet/  /best-compression-socks-for-flat-feet/  302
 /hy/best-dress-shoes-for-flat-feet/  /best-dress-shoes-for-flat-feet/  302
 /hy/best-foot-care-tools-for-flat-feet/  /best-foot-care-tools-for-flat-feet/  302
+/hy/best-golf-shoes-for-flat-feet/  /best-golf-shoes-for-flat-feet/  302
 /hy/best-hiking-shoes-for-flat-feet/  /best-hiking-shoes-for-flat-feet/  302
 /hy/best-kids-shoes-for-flat-feet/  /best-kids-shoes-for-flat-feet/  302
 /hy/best-shoes-for-bunions-and-flat-feet/  /best-shoes-for-bunions-and-flat-feet/  302
@@ -56,6 +60,7 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /hy/best-shoes-for-nurses-with-flat-feet/  /best-shoes-for-nurses-with-flat-feet/  302
 /hy/best-shoes-for-overpronation/  /best-shoes-for-overpronation/  302
 /hy/best-shoes-for-plantar-fasciitis-and-flat-feet/  /best-shoes-for-plantar-fasciitis-and-flat-feet/  302
+/hy/best-shoes-for-seniors-with-flat-feet/  /best-shoes-for-seniors-with-flat-feet/  302
 /hy/best-shoes-for-wide-flat-feet/  /best-shoes-for-wide-flat-feet/  302
 /hy/best-slippers-for-flat-feet/  /best-slippers-for-flat-feet/  302
 /hy/best-tennis-and-pickleball-shoes-for-flat-feet/  /best-tennis-and-pickleball-shoes-for-flat-feet/  302
@@ -85,8 +90,12 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /hy/shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  /shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  302
 /hy/shoe-reviews/superfeet-green-review/  /shoe-reviews/superfeet-green-review/  302
 /hy/shoe-reviews/timberland-pro-composite-toe-review/  /shoe-reviews/timberland-pro-composite-toe-review/  302
+/kk/best-basketball-shoes-for-flat-feet/  /best-basketball-shoes-for-flat-feet/  302
+/kk/best-boots-for-flat-feet/  /best-boots-for-flat-feet/  302
+/kk/best-compression-socks-for-flat-feet/  /best-compression-socks-for-flat-feet/  302
 /kk/best-dress-shoes-for-flat-feet/  /best-dress-shoes-for-flat-feet/  302
 /kk/best-foot-care-tools-for-flat-feet/  /best-foot-care-tools-for-flat-feet/  302
+/kk/best-golf-shoes-for-flat-feet/  /best-golf-shoes-for-flat-feet/  302
 /kk/best-hiking-shoes-for-flat-feet/  /best-hiking-shoes-for-flat-feet/  302
 /kk/best-kids-shoes-for-flat-feet/  /best-kids-shoes-for-flat-feet/  302
 /kk/best-shoes-for-bunions-and-flat-feet/  /best-shoes-for-bunions-and-flat-feet/  302
@@ -94,6 +103,7 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /kk/best-shoes-for-nurses-with-flat-feet/  /best-shoes-for-nurses-with-flat-feet/  302
 /kk/best-shoes-for-overpronation/  /best-shoes-for-overpronation/  302
 /kk/best-shoes-for-plantar-fasciitis-and-flat-feet/  /best-shoes-for-plantar-fasciitis-and-flat-feet/  302
+/kk/best-shoes-for-seniors-with-flat-feet/  /best-shoes-for-seniors-with-flat-feet/  302
 /kk/best-shoes-for-wide-flat-feet/  /best-shoes-for-wide-flat-feet/  302
 /kk/best-slippers-for-flat-feet/  /best-slippers-for-flat-feet/  302
 /kk/best-tennis-and-pickleball-shoes-for-flat-feet/  /best-tennis-and-pickleball-shoes-for-flat-feet/  302
@@ -123,8 +133,12 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /kk/shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  /shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  302
 /kk/shoe-reviews/superfeet-green-review/  /shoe-reviews/superfeet-green-review/  302
 /kk/shoe-reviews/timberland-pro-composite-toe-review/  /shoe-reviews/timberland-pro-composite-toe-review/  302
+/ru/best-basketball-shoes-for-flat-feet/  /best-basketball-shoes-for-flat-feet/  302
+/ru/best-boots-for-flat-feet/  /best-boots-for-flat-feet/  302
+/ru/best-compression-socks-for-flat-feet/  /best-compression-socks-for-flat-feet/  302
 /ru/best-dress-shoes-for-flat-feet/  /best-dress-shoes-for-flat-feet/  302
 /ru/best-foot-care-tools-for-flat-feet/  /best-foot-care-tools-for-flat-feet/  302
+/ru/best-golf-shoes-for-flat-feet/  /best-golf-shoes-for-flat-feet/  302
 /ru/best-hiking-shoes-for-flat-feet/  /best-hiking-shoes-for-flat-feet/  302
 /ru/best-kids-shoes-for-flat-feet/  /best-kids-shoes-for-flat-feet/  302
 /ru/best-shoes-for-bunions-and-flat-feet/  /best-shoes-for-bunions-and-flat-feet/  302
@@ -132,6 +146,7 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /ru/best-shoes-for-nurses-with-flat-feet/  /best-shoes-for-nurses-with-flat-feet/  302
 /ru/best-shoes-for-overpronation/  /best-shoes-for-overpronation/  302
 /ru/best-shoes-for-plantar-fasciitis-and-flat-feet/  /best-shoes-for-plantar-fasciitis-and-flat-feet/  302
+/ru/best-shoes-for-seniors-with-flat-feet/  /best-shoes-for-seniors-with-flat-feet/  302
 /ru/best-shoes-for-wide-flat-feet/  /best-shoes-for-wide-flat-feet/  302
 /ru/best-slippers-for-flat-feet/  /best-slippers-for-flat-feet/  302
 /ru/best-tennis-and-pickleball-shoes-for-flat-feet/  /best-tennis-and-pickleball-shoes-for-flat-feet/  302
@@ -149,8 +164,12 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /ru/shoe-reviews/powerstep-pinnacle-review/  /shoe-reviews/powerstep-pinnacle-review/  302
 /ru/shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  /shoe-reviews/sof-sole-plantar-fasciitis-insoles-review/  302
 /ru/shoe-reviews/superfeet-green-review/  /shoe-reviews/superfeet-green-review/  302
+/uk/best-basketball-shoes-for-flat-feet/  /best-basketball-shoes-for-flat-feet/  302
+/uk/best-boots-for-flat-feet/  /best-boots-for-flat-feet/  302
+/uk/best-compression-socks-for-flat-feet/  /best-compression-socks-for-flat-feet/  302
 /uk/best-dress-shoes-for-flat-feet/  /best-dress-shoes-for-flat-feet/  302
 /uk/best-foot-care-tools-for-flat-feet/  /best-foot-care-tools-for-flat-feet/  302
+/uk/best-golf-shoes-for-flat-feet/  /best-golf-shoes-for-flat-feet/  302
 /uk/best-hiking-shoes-for-flat-feet/  /best-hiking-shoes-for-flat-feet/  302
 /uk/best-kids-shoes-for-flat-feet/  /best-kids-shoes-for-flat-feet/  302
 /uk/best-shoes-for-bunions-and-flat-feet/  /best-shoes-for-bunions-and-flat-feet/  302
@@ -158,6 +177,7 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /uk/best-shoes-for-nurses-with-flat-feet/  /best-shoes-for-nurses-with-flat-feet/  302
 /uk/best-shoes-for-overpronation/  /best-shoes-for-overpronation/  302
 /uk/best-shoes-for-plantar-fasciitis-and-flat-feet/  /best-shoes-for-plantar-fasciitis-and-flat-feet/  302
+/uk/best-shoes-for-seniors-with-flat-feet/  /best-shoes-for-seniors-with-flat-feet/  302
 /uk/best-shoes-for-wide-flat-feet/  /best-shoes-for-wide-flat-feet/  302
 /uk/best-slippers-for-flat-feet/  /best-slippers-for-flat-feet/  302
 /uk/best-tennis-and-pickleball-shoes-for-flat-feet/  /best-tennis-and-pickleball-shoes-for-flat-feet/  302
@@ -166,8 +186,12 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /uk/guides/flat-feet-exercises-and-stretches/  /guides/flat-feet-exercises-and-stretches/  302
 /uk/guides/flat-feet-in-children/  /guides/flat-feet-in-children/  302
 /uk/guides/minimalist-barefoot-shoes-flat-feet/  /guides/minimalist-barefoot-shoes-flat-feet/  302
+/uz/best-basketball-shoes-for-flat-feet/  /best-basketball-shoes-for-flat-feet/  302
+/uz/best-boots-for-flat-feet/  /best-boots-for-flat-feet/  302
+/uz/best-compression-socks-for-flat-feet/  /best-compression-socks-for-flat-feet/  302
 /uz/best-dress-shoes-for-flat-feet/  /best-dress-shoes-for-flat-feet/  302
 /uz/best-foot-care-tools-for-flat-feet/  /best-foot-care-tools-for-flat-feet/  302
+/uz/best-golf-shoes-for-flat-feet/  /best-golf-shoes-for-flat-feet/  302
 /uz/best-hiking-shoes-for-flat-feet/  /best-hiking-shoes-for-flat-feet/  302
 /uz/best-kids-shoes-for-flat-feet/  /best-kids-shoes-for-flat-feet/  302
 /uz/best-shoes-for-bunions-and-flat-feet/  /best-shoes-for-bunions-and-flat-feet/  302
@@ -175,6 +199,7 @@ https://www.flatfeetshoeguide.com/*  https://flatfeetshoeguide.com/:splat  301!
 /uz/best-shoes-for-nurses-with-flat-feet/  /best-shoes-for-nurses-with-flat-feet/  302
 /uz/best-shoes-for-overpronation/  /best-shoes-for-overpronation/  302
 /uz/best-shoes-for-plantar-fasciitis-and-flat-feet/  /best-shoes-for-plantar-fasciitis-and-flat-feet/  302
+/uz/best-shoes-for-seniors-with-flat-feet/  /best-shoes-for-seniors-with-flat-feet/  302
 /uz/best-shoes-for-wide-flat-feet/  /best-shoes-for-wide-flat-feet/  302
 /uz/best-slippers-for-flat-feet/  /best-slippers-for-flat-feet/  302
 /uz/best-tennis-and-pickleball-shoes-for-flat-feet/  /best-tennis-and-pickleball-shoes-for-flat-feet/  302

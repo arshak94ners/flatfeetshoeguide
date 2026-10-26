@@ -163,6 +163,114 @@ const PRODUCTS = {
   mindBodhiToeSpacers: {
     asin: "B07M5C72VQ", brand: "Mind Bodhi", name: "Mind Bodhi Toe Separators", kind: "Toe spacers",
     specs: [["Type", "Gel toe spacers"], ["Material", "BPA- and latex-free gel"], ["Sizing", "Women 6–10, men 7–9 (regular)"]]
+  },
+
+  // ----- Second batch (verified 2026-10-26) -----
+
+  // Boots
+  orthofeetFlorence: {
+    asin: "B0CP8HZ5TX", brand: "Orthofeet", name: "Orthofeet Florence Waterproof Boot", kind: "Women's boot",
+    specs: [["For", "Women"], ["Support", "Orthotic insole with anatomical arch support"], ["Closure", "Two hook-and-loop straps"], ["Weather", "Waterproof leather"]]
+  },
+  blundstone500: {
+    asin: "B0030XZW0C", brand: "Blundstone", name: "Blundstone Original 500 Chelsea Boot", kind: "Chelsea boot",
+    specs: [["For", "Men &amp; women"], ["Stability", "Steel shank"], ["Cushioning", "SPS Max Comfort system"], ["Footbed", "Removable"]]
+  },
+  columbiaNewtonRidge: {
+    asin: "B0CT9226RW", brand: "Columbia", name: "Columbia Newton Ridge Plus II Waterproof", kind: "Hiking boot",
+    specs: [["For", "Men (wide available)"], ["Closure", "Lace-up"], ["Weather", "Waterproof leather and mesh"], ["Traction", "Omni-Grip"]]
+  },
+  sorelCaribou: {
+    asin: "B001OTYZC0", brand: "Sorel", name: "Sorel Caribou Waterproof", kind: "Winter boot",
+    specs: [["For", "Men"], ["Liner", "Removable 9 mm felt inner boot"], ["Shell", "Vulcanized rubber, seam-sealed"], ["Use", "Snow and deep cold"]]
+  },
+  timberlandPremium6: {
+    asin: "B09PLFY7ZB", brand: "Timberland", name: "Timberland Premium 6-Inch Waterproof", kind: "Classic boot",
+    specs: [["For", "Men (wide available)"], ["Comfort", "Anti-fatigue system adopted from Timberland PRO"], ["Weather", "Seam-sealed waterproof leather"], ["Insulation", "PrimaLoft"]]
+  },
+
+  // Basketball
+  uaLockdown7: {
+    asin: "B0F8BX23S6", brand: "Under Armour", name: "Under Armour Lockdown 7", kind: "Basketball shoe",
+    specs: [["For", "Men &amp; women"], ["Upper", "Mesh with leather and film support overlays"], ["Midsole", "EVA"], ["Outsole", "Herringbone rubber"]]
+  },
+  uaJet23: {
+    asin: "B0BGR6L3L3", brand: "Under Armour", name: "Under Armour Jet '23", kind: "Basketball shoe",
+    specs: [["For", "Men"], ["Upper", "Mixed-material, targeted support"], ["Midsole", "Full-length Micro G"], ["Sockliner", "Plush foam"]]
+  },
+  nikeGiannisImmortality4: {
+    asin: "B0DZXMRPR8", brand: "Nike", name: "Nike Giannis Immortality 4", kind: "Basketball shoe",
+    specs: [["For", "Men &amp; women"], ["Lockdown", "Internal containment system"], ["Heel", "Padded heel for sudden stops"], ["Traction", "Multidirectional"]]
+  },
+  nikePrecision7: {
+    asin: "B0D945K7H7", brand: "Nike", name: "Nike Precision 7", kind: "Basketball shoe",
+    specs: [["For", "Men &amp; women"], ["Midsole", "Sculpted foam"], ["Collar", "Plush foam collar and tongue"], ["Traction", "Herringbone"]]
+  },
+  adidasDameCertified: {
+    asin: "B0B5YYXYZ6", brand: "adidas", name: "adidas Dame Certified", kind: "Basketball shoe",
+    specs: [["For", "Men &amp; women"], ["Cushioning", "Bounce"], ["Profile", "Low to the ground"], ["Outsole", "Rubber"]]
+  },
+
+  // Golf
+  footjoyFuel: {
+    asin: "B0D2NPHFPY", brand: "FootJoy", name: "FootJoy FJ Fuel Spikeless", kind: "Golf shoe",
+    specs: [["For", "Men"], ["Stability", "Patented Stability Bridge"], ["Midsole", "Stratolite EVA"], ["Fit", "Standard forefoot, slightly narrow heel"]]
+  },
+  eccoBiomHybrid3: {
+    asin: "B085VSN242", brand: "ECCO", name: "ECCO Biom Hybrid 3 GORE-TEX", kind: "Golf shoe",
+    specs: [["For", "Men"], ["Outsole", "Tri-Fi-Grip with stability zone"], ["Insole", "Removable Ortholite (extra-width option)"], ["Weather", "GORE-TEX"]]
+  },
+  skechersGoGolfArchFit: {
+    asin: "B0D4JTL42T", brand: "Skechers", name: "Skechers GO GOLF Arch Fit", kind: "Golf shoe",
+    specs: [["For", "Men"], ["Support", "Arch Fit insole"], ["Cushioning", "ULTRA GO"], ["Outsole", "Spikeless Goodyear rubber"]]
+  },
+  nbFreshFoamLinksPro: {
+    asin: "B08NYV9RWZ", brand: "New Balance", name: "New Balance Fresh Foam LinksPro", kind: "Golf shoe",
+    specs: [["For", "Men"], ["Structure", "TPU eyestay and exoskeleton outsole"], ["Midsole", "Fresh Foam, 10 mm drop"], ["Cleats", "Removable"]]
+  },
+  adidasCodechaos: {
+    asin: "B096JNTTTF", brand: "adidas", name: "adidas Codechaos Spikeless", kind: "Golf shoe",
+    specs: [["For", "Men"], ["Midsole", "BOOST foam"], ["Outsole", "CHAOS Traction with TwistGrip"], ["Weather", "Waterproof"]]
+  },
+
+  // Seniors
+  propetLifeWalker: {
+    asin: "B000BW19ZW", brand: "Propét", name: "Propét LifeWalker Strap", kind: "Walking shoe",
+    specs: [["For", "Men"], ["Support", "Contoured heel stabilizer, arch-support midsole"], ["Insole", "Removable cushioned orthotic"], ["Closure", "Dual hook-and-loop straps"]]
+  },
+  orthofeetCoral: {
+    asin: "B095NB3MFJ", brand: "Orthofeet", name: "Orthofeet Coral Sneaker", kind: "Women's sneaker",
+    specs: [["For", "Women"], ["Support", "Orthotic insole with anatomical arch support"], ["Upper", "Stretch knit, seam-free"], ["Fit", "Wide toe box"]]
+  },
+  nb813: {
+    asin: "B0BZ5R6TFW", brand: "New Balance", name: "New Balance 813 Hook &amp; Loop", kind: "Walking shoe",
+    specs: [["For", "Men"], ["Closure", "Hook-and-loop"], ["Upper", "Leather, soft collar"], ["Medicare", "HCPCS A5500 eligible"]]
+  },
+  nb577: {
+    asin: "B003UHUM5S", brand: "New Balance", name: "New Balance 577 Hook &amp; Loop", kind: "Walking shoe",
+    specs: [["For", "Women"], ["Cushioning", "Abzorb heel"], ["Midsole", "Polyurethane, stable"], ["Medicare", "HCPCS A5500 eligible"]]
+  },
+  skechersCambridge: {
+    asin: "B0CTNLLT6F", brand: "Skechers", name: "Skechers Max Cushioning Arch Fit 2.0 Slip-ins", kind: "Slip-in sneaker",
+    specs: [["For", "Women"], ["Support", "Arch Fit insole system"], ["Entry", "Hands-free, heel pillow"], ["Outsole", "Goodyear anti-slip rubber"]]
+  },
+
+  // Socks
+  feeturesPfRelief: {
+    asin: "B08CF3B4SR", brand: "Feetures", name: "Feetures Plantar Fasciitis Relief Crew", kind: "PF relief sock",
+    specs: [["Type", "Light-cushion crew sock"], ["Compression", "Targeted, three zones"], ["Toe", "Seamless"]]
+  },
+  bitlyPfSleeves: {
+    asin: "B08HYKCMHR", brand: "Bitly", name: "Bitly Plantar Fasciitis Compression Sleeves", kind: "Foot sleeves",
+    specs: [["Type", "Open-toe compression foot sleeve"], ["Support", "Compression through the arch"], ["Sizing", "By the brand's size chart"]]
+  },
+  cepRunTall4: {
+    asin: "B0BHMVF681", brand: "CEP", name: "CEP The Run Tall Compression Socks 4.0", kind: "Running compression",
+    specs: [["Type", "Knee-high compression sock"], ["Compression", "Targeted at the arch and ankle"], ["For", "Men (women's version sold separately)"]]
+  },
+  swiftwickAspire: {
+    asin: "B0829FB29Y", brand: "Swiftwick", name: "Swiftwick ASPIRE Ankle Socks", kind: "Compression ankle sock",
+    specs: [["Type", "Ultra-light ankle sock, 3-pack"], ["Compression", "Firm contoured"], ["Heel", "Y-shaped for a snug fit"]]
   }
 };
 
@@ -722,6 +830,383 @@ const PAGES = [
       { q: "Do toe spacers fix flat feet?", a: "No. Toe spacers spread and realign the toes, which some people find comfortable and helpful during strengthening exercises, but they don't build or support an arch on their own." }
     ],
     related: [R.stretches, R.pf, R.insoles]
+  },
+
+  // ===================== BOOTS =====================
+  {
+    slug: "best-boots-for-flat-feet",
+    date: DATE,
+    breadcrumbName: "Best Boots for Flat Feet",
+    title: "Best Boots for Flat Feet: Casual &amp; Winter (2026)",
+    metaDescription: "Casual and winter boots for flat feet, chosen for shanks, firm heels, and removable footbeds that fit an orthotic. Chelsea, hiking, snow, and orthopedic picks.",
+    h1: "Best Casual and Winter Boots for Flat Feet",
+    lede: "Boots look sturdy, but plenty of them are just a stiff leather shell around a flat, glued-in footbed. For flat feet, the boot to buy has a shank or firm midsole for structure, a heel that holds you upright, and a footbed you can swap for real arch support.",
+    picksIntro: "Five boots for different jobs: an orthopedic winter boot, an everyday Chelsea, a waterproof hiker, a snow boot, and the classic 6-inch.",
+    picks: [
+      {
+        id: "orthofeetFlorence", bestFor: "Most arch support (women)",
+        blurb: "The only boot here with real arch support built in. Orthofeet ships it with an orthotic insole with anatomical arch support and lists flat feet and overpronation among its target conditions. Two hook-and-loop straps open wide for easy entry, and the leather is fully waterproof.",
+        pros: ["Orthotic insole with anatomical arch support included", "Waterproof leather for rain and slush", "Straps open wide for easy on and off", "Wide toe box"],
+        cons: ["Strap closure isn't as sleek as laces or a Chelsea", "Fewer ratings than the classics on this page", "Orthopedic styling won't suit everyone"],
+        buyFor: "Women with flat feet who want a winter boot that supports the arch with no extra insert.",
+        avoidFor: "Anyone after a fashion-first boot."
+      },
+      {
+        id: "blundstone500", bestFor: "Best everyday Chelsea",
+        blurb: "Blundstones are famous for lasting for years, and the Original 500 has two features flat feet benefit from: a steel shank that adds stability through the midfoot, and a removable footbed, so you can slot in your own orthotic. The SPS Max Comfort system cushions the heel.",
+        pros: ["Steel shank adds midfoot stability", "Removable footbed fits an orthotic", "Cushioned SPS Max Comfort heel", "Pulls on easily, very durable"],
+        cons: ["Stock footbed has little arch support", "Elastic sides give less lockdown than laces", "Firm until broken in"],
+        buyFor: "Anyone who wants one do-everything boot and will add an insole.",
+        avoidFor: "Overpronators who need a laced boot that holds the heel firmly."
+      },
+      {
+        id: "columbiaNewtonRidge", bestFor: "Best value waterproof",
+        blurb: "A lace-up, waterproof leather boot with a cushioned midsole and Omni-Grip traction, at a friendly price and with a huge base of buyer feedback. Lacing locks the heel down better than a pull-on, and wide sizes are available for flat feet that splay.",
+        pros: ["Lace-up closure for a secure heel", "Waterproof leather and mesh", "Wide sizes available", "Affordable and widely reviewed"],
+        cons: ["Moderate built-in arch support", "Not insulated for deep cold", "Heavier than a sneaker for town wear"],
+        buyFor: "People who want a waterproof, laced boot for wet weather, trails, and errands.",
+        avoidFor: "Deep snow and extreme cold."
+      },
+      {
+        id: "sorelCaribou", bestFor: "Best for deep snow",
+        blurb: "For serious winter, the Caribou's seam-sealed rubber shell keeps snow out, and its removable 9 mm felt inner boot can come out to dry. The rubber lower is firm and enclosing, which holds the heel steady on ice and slush.",
+        pros: ["Seam-sealed waterproof construction", "Removable felt liner", "Firm rubber shell holds the foot steady", "Built for deep cold and snow"],
+        cons: ["Heavy and bulky for walking long distances", "Liner adds volume, so a thick orthotic may not fit", "No real arch support built in"],
+        buyFor: "Shoveling snow, cold commutes, and winter dog walks.",
+        avoidFor: "Long walks or mild winters."
+      },
+      {
+        id: "timberlandPremium6", bestFor: "Classic style, with comfort tech",
+        blurb: "The classic 6-inch Premium (not the PRO work boot) now includes an anti-fatigue comfort system that Timberland adapted from its PRO line, plus seam-sealed waterproof leather and PrimaLoft insulation. It's a style pick first, so plan to pair it with an arch-support insole.",
+        pros: ["Anti-fatigue comfort system from Timberland PRO", "Seam-sealed waterproof leather", "PrimaLoft insulation", "Wide widths available"],
+        cons: ["Stiff leather needs break-in", "Limited built-in arch support", "Heavy compared with a hiker"],
+        buyFor: "People who want the iconic boot and will add an insole.",
+        avoidFor: "Anyone who needs support without an insert."
+      }
+    ],
+    sections: [
+      {
+        id: "what-to-look-for", h2: "What to look for in a boot with flat feet",
+        html: `        <ul>
+          <li><strong>A shank or firm midsole.</strong> A shank (steel, fiberglass, or TPU) stiffens the midfoot so it can't fold in half. That's what stops a flat arch collapsing further on uneven ground.</li>
+          <li><strong>A removable footbed.</strong> Most boot footbeds are flat foam. If it comes out, an <a href="/best-insoles-for-flat-feet/">arch-support insole</a> can go in.</li>
+          <li><strong>Laces or straps for lockdown.</strong> Pull-on boots are convenient, but a laced boot holds the heel against the footbed better.</li>
+          <li><strong>Room for the insole.</strong> Try boots on with your insole in, and with the socks you'll wear in winter.</li>
+        </ul>`
+      },
+      {
+        id: "winter-tips", h2: "Winter-specific tips",
+        html: `        <p>Cold, icy ground makes people with flat feet tense their feet and shorten their stride, which tires the arch faster. Good traction matters as much as support: a slip-resistant outsole lets you walk normally. Thick winter socks also take up room, so if you're between sizes, size up and use an insole to fill the extra volume.</p>`
+      }
+    ],
+    faq: [
+      { q: "Are Chelsea boots good for flat feet?", a: "They can be if they have a shank and a removable footbed, like the Blundstone 500, so you can add arch support. Elastic sides give less heel control than laces, so strong overpronators often do better in a laced boot." },
+      { q: "Can I put orthotics in winter boots?", a: "Usually yes, if the boot has a removable footbed or liner. Take the stock footbed out and put the orthotic in its place. Liner boots like the Sorel Caribou have less spare room, so try them on with the orthotic in." },
+      { q: "Are Timberland boots good for flat feet?", a: "The classic 6-inch Premium now has an anti-fatigue comfort system, but its built-in arch support is limited. It works well for many people with flat feet when paired with a supportive insole." }
+    ],
+    related: [{ href: "/best-hiking-shoes-for-flat-feet/", tag: "Hiking", title: "Best Hiking Shoes &amp; Boots", text: "Trail stability where flat feet roll most." }, R.insoles, R.work]
+  },
+
+  // ===================== BASKETBALL =====================
+  {
+    slug: "best-basketball-shoes-for-flat-feet",
+    date: DATE,
+    breadcrumbName: "Best Basketball Shoes for Flat Feet",
+    title: "Best Basketball Shoes for Flat Feet (2026)",
+    metaDescription: "Basketball shoes for flat feet: models with supportive uppers, heel lockdown, and stable cushioning for cuts and landings, plus how to add arch support.",
+    h1: "Best Basketball Shoes for Flat Feet",
+    lede: "Basketball loads flat feet from every direction: hard landings, sudden stops, and sharp lateral cuts. Most basketball shoes don't have much arch support built in, so the job is to choose one that locks the heel down and holds the foot over a stable base, then add an insole if you need one.",
+    picksIntro: "Five well-reviewed basketball shoes with strong heel lockdown and stable platforms, from budget picks to signature models.",
+    picks: [
+      {
+        id: "uaLockdown7", bestFor: "Best budget pick",
+        blurb: "The Lockdown 7 earns its name with leather and film overlays on a mesh upper that add support where the foot pushes against the shoe, plus a solid herringbone outsole. It's affordable, has thousands of ratings, and its standard EVA insole is easy to swap for an arch-support insert.",
+        pros: ["Leather and film overlays add support", "Herringbone rubber for on-court control", "Very widely reviewed", "Budget-friendly"],
+        cons: ["Basic EVA cushioning", "Little arch support built in", "Not built for heavy, high-flying players"],
+        buyFor: "Recreational players and growing teens who want a supportive, affordable shoe.",
+        avoidFor: "Heavy players who need premium impact protection."
+      },
+      {
+        id: "uaJet23", bestFor: "Best cushioned landings",
+        blurb: "The Jet '23 adds a full-length Micro G midsole and a plush foam sockliner for softer landings, with a mixed-material upper that Under Armour says puts support where you need it. A good step up from the Lockdown if your feet ache after games.",
+        pros: ["Full-length Micro G cushioning", "Plush foam sockliner", "Mixed-material upper with targeted support", "Durable rubber outsole"],
+        cons: ["Softer feel gives slightly less court feel", "Moderate arch support", "Pricier than the Lockdown 7"],
+        buyFor: "Players who want more cushioning for jumping and landing.",
+        avoidFor: "Players who prefer a firm, low-to-the-ground feel."
+      },
+      {
+        id: "nikeGiannisImmortality4", bestFor: "Best lockdown",
+        blurb: "Nike built the Immortality 4 around an internal containment system that keeps the foot over the footbed during cuts, plus a padded heel shape designed to support you through sudden stops. That heel control is exactly what helps a flat foot avoid rolling inward on lateral moves.",
+        pros: ["Internal containment system for lockdown", "Padded heel for support in sudden stops", "Multidirectional traction", "Light and quick"],
+        cons: ["Moderate cushioning for heavier players", "Basic insole", "Fewer ratings than the Under Armour picks"],
+        buyFor: "Quick, guard-style players who cut a lot.",
+        avoidFor: "Bigger players who need maximum impact protection."
+      },
+      {
+        id: "nikePrecision7", bestFor: "Best budget Nike",
+        blurb: "A simple, affordable Nike with a sculpted foam midsole that Nike describes as soft and supportive, plush foam around the collar and tongue, and herringbone traction. It's low-profile, so many flat-footed players pair it with a supportive insole.",
+        pros: ["Soft, supportive foam midsole", "Plush collar and tongue around the ankle", "Herringbone traction", "Good price"],
+        cons: ["Low-profile build has little arch support", "Less structured upper than the Giannis", "Best for recreational play"],
+        buyFor: "Casual players who want an affordable Nike and will add an insole.",
+        avoidFor: "Competitive players who need maximum support."
+      },
+      {
+        id: "adidasDameCertified", bestFor: "Best low-to-the-ground feel",
+        blurb: "Damian Lillard's value line uses lightweight Bounce cushioning and a grippy rubber outsole on a low, stable platform. A lower platform means less leverage for the foot to roll over the edge of the shoe, which suits flat-footed guards who add their own arch support.",
+        pros: ["Low, stable platform", "Lightweight Bounce cushioning", "Grippy rubber outsole", "Breathable upper"],
+        cons: ["Minimal built-in arch support", "Not much impact protection for heavy players", "Listing mixes men's and women's sizing, so check carefully"],
+        buyFor: "Guards who like court feel and use an arch-support insole.",
+        avoidFor: "Bigger players who need more cushioning."
+      }
+    ],
+    sections: [
+      {
+        id: "what-to-look-for", h2: "What matters in a basketball shoe for flat feet",
+        html: `        <ul>
+          <li><strong>Heel lockdown.</strong> The heel should not lift or slide when you stop hard. A sliding heel lets a flat foot roll inward.</li>
+          <li><strong>A wide, stable base.</strong> A flared, low outsole resists rolling over during cuts.</li>
+          <li><strong>A removable insole.</strong> Basketball insoles are usually flat foam. Swap in an <a href="/best-insoles-for-flat-feet/">arch-support insole</a> for real structure.</li>
+          <li><strong>High tops?</strong> A high collar adds some ankle proprioception, but heel lockdown and a stable base matter more than collar height.</li>
+        </ul>`
+      },
+      {
+        id: "insoles", h2: "Why an insole matters most here",
+        html: `        <p>Very few basketball shoes have meaningful arch support, because brands design for court feel and responsiveness. That makes basketball the sport where a supportive aftermarket insole does the most good. Pick the shoe for fit, lockdown, and traction, then add the arch support yourself.</p>`
+      }
+    ],
+    faq: [
+      { q: "Do I need high-top basketball shoes for flat feet?", a: "Not necessarily. High tops can help ankle awareness, but for flat feet a locked-down heel, a stable base, and a supportive insole matter more than collar height." },
+      { q: "Can I use running shoes for basketball?", a: "It isn't recommended. Running shoes are built for straight-line motion and have soft, tall heels that can roll during lateral cuts. Basketball shoes are lower, wider, and built for side-to-side movement." },
+      { q: "Should I add insoles to basketball shoes?", a: "For most players with flat feet, yes. Basketball shoes rarely have much arch support, so a supportive insole that replaces the stock one is often the single biggest improvement." }
+    ],
+    related: [{ href: "/best-tennis-and-pickleball-shoes-for-flat-feet/", tag: "Court sports", title: "Tennis &amp; Pickleball Shoes", text: "Lateral support for side-to-side cuts." }, R.insoles, R.gym]
+  },
+
+  // ===================== GOLF =====================
+  {
+    slug: "best-golf-shoes-for-flat-feet",
+    date: DATE,
+    breadcrumbName: "Best Golf Shoes for Flat Feet",
+    title: "Best Golf Shoes for Flat Feet (2026)",
+    metaDescription: "Golf shoes for flat feet: stable platforms for the swing, arch support for walking 18 holes, and removable insoles for orthotics. Spiked and spikeless picks.",
+    h1: "Best Golf Shoes for Flat Feet",
+    lede: "A round of golf asks two things of your feet: about four to five miles of walking, and a stable base while you rotate hard through the swing. Flat feet struggle with both, so the right golf shoe needs walking-shoe support and a platform that doesn't let the foot roll during the turn.",
+    picksIntro: "Five golf shoes with stability features built in, including two with removable insoles for your own orthotic.",
+    picks: [
+      {
+        id: "eccoBiomHybrid3", bestFor: "Best overall",
+        blurb: "ECCO's Tri-Fi-Grip outsole has dedicated stability and rotational-support zones for the swing, and the Ortholite insole is removable, which gives an extra-width option or room for an orthotic. GORE-TEX keeps feet dry on wet morning rounds.",
+        pros: ["Outsole zones for stability and rotational support", "Removable Ortholite insole fits an orthotic", "GORE-TEX waterproofing", "Light, strong yak leather"],
+        cons: ["Premium price", "Natural-motion design feels close to the ground", "Arch support comes mainly from your own insert"],
+        buyFor: "Golfers who walk the course and want stability plus room for an orthotic.",
+        avoidFor: "Anyone who wants maximum arch support built in with no insert."
+      },
+      {
+        id: "footjoyFuel", bestFor: "Best midfoot stability",
+        blurb: "FootJoy's patented Stability Bridge sits in the midfoot, exactly where a flat arch wants to collapse, and resists twisting during the swing. A Stratolite EVA midsole cushions the walk, and the synthetic upper wipes clean.",
+        pros: ["Patented midfoot Stability Bridge", "Cushioned Stratolite EVA midsole", "Easy-clean synthetic upper", "Spikeless grip for course and clubhouse"],
+        cons: ["Listing is marked previous-season style, so sizes may be limited", "Slightly narrow heel per FootJoy's fit notes", "Moderate built-in arch support"],
+        buyFor: "Golfers whose feet roll inward during the swing.",
+        avoidFor: "Wide heels; check the fit notes first."
+      },
+      {
+        id: "skechersGoGolfArchFit", bestFor: "Best built-in arch support",
+        blurb: "Skechers' Arch Fit insole gives podiatrist-certified arch support out of the box, paired with ULTRA GO cushioning for the walk between shots and a spikeless Goodyear rubber outsole for traction. It's the most walking-shoe-like pick here.",
+        pros: ["Arch Fit insole with arch support built in", "Very comfortable for walking 18 holes", "Goodyear rubber spikeless outsole", "Usually well priced"],
+        cons: ["Softer platform gives less swing stability than ECCO or FootJoy", "Spikeless grip is weaker on wet slopes", "Casual look"],
+        buyFor: "Walkers and casual golfers who want comfort and arch support most.",
+        avoidFor: "Hard swingers on wet, hilly courses."
+      },
+      {
+        id: "nbFreshFoamLinksPro", bestFor: "Best for wet courses",
+        blurb: "New Balance pairs a structured build, with a TPU eyestay and an exoskeleton TPU outsole, with soft Fresh Foam cushioning and a molded insole. Removable cleats give better grip than spikeless shoes on wet grass, and the upper is waterproof.",
+        pros: ["TPU structure in the upper and outsole", "Fresh Foam cushioning, 10 mm drop", "Removable cleats for wet-course grip", "Waterproof upper"],
+        cons: ["Cleats aren't ideal off the course", "Moderate arch support", "Soft foam isn't for everyone"],
+        buyFor: "Golfers on wet or hilly courses who want structure and cushioning.",
+        avoidFor: "Anyone who wants one shoe for the course and the street."
+      },
+      {
+        id: "adidasCodechaos", bestFor: "Most cushioned",
+        blurb: "adidas puts its BOOST foam in the midsole for long-lasting cushioning, with a CHAOS Traction outsole and TwistGrip technology that adidas describes as giving incredible stability. It's waterproof, and the cushioning helps on firm summer fairways.",
+        pros: ["BOOST foam cushioning for long rounds", "TwistGrip outsole designed for stability", "Waterproof protection", "Spikeless and versatile"],
+        cons: ["Limited built-in arch support", "Sporty look", "Fewer details on the listing than other picks"],
+        buyFor: "Golfers whose main complaint is sore, tired feet by the back nine.",
+        avoidFor: "Strong overpronators who need structured support."
+      }
+    ],
+    sections: [
+      {
+        id: "what-to-look-for", h2: "What matters in a golf shoe for flat feet",
+        html: `        <ul>
+          <li><strong>Midfoot stability.</strong> During the swing, the trail foot rolls inward. Features like FootJoy's Stability Bridge or ECCO's stability zones resist that roll.</li>
+          <li><strong>Walking comfort.</strong> A round is miles of walking. Cushioning and arch support matter as much as in a walking shoe.</li>
+          <li><strong>A removable insole.</strong> For an <a href="/best-insoles-for-flat-feet/">arch-support insole</a> or your custom orthotic.</li>
+          <li><strong>Spiked or spikeless?</strong> Spiked shoes grip better on wet slopes, while spikeless shoes are more comfortable and versatile.</li>
+        </ul>`
+      },
+      {
+        id: "walking-vs-cart", h2: "Walking or riding?",
+        html: `        <p>If you walk the course, prioritize comfort and arch support: the Skechers or ECCO with your own insole. If you mostly ride a cart, swing stability matters more than walking cushioning, which favors the FootJoy or New Balance. Either way, try golf shoes on with the socks you play in, late in the day.</p>`
+      }
+    ],
+    faq: [
+      { q: "Can I wear orthotics in golf shoes?", a: "Yes, if the shoe has a removable insole. The ECCO Biom Hybrid 3, for example, has a removable Ortholite insole specifically to give an extra-width option. Replace the stock insole rather than stacking the orthotic on top." },
+      { q: "Are spikeless golf shoes OK for flat feet?", a: "Yes. Spikeless shoes are usually more comfortable for walking, which helps flat feet over a full round. On wet or hilly courses, spiked shoes give better grip." },
+      { q: "Do flat feet affect the golf swing?", a: "They can. A foot that rolls inward makes it harder to keep a stable base through the rotation. A golf shoe with midfoot stability features, plus arch support, helps keep the foot steady." }
+    ],
+    related: [R.walking, R.insoles, R.overpronation]
+  },
+
+  // ===================== SENIORS =====================
+  {
+    slug: "best-shoes-for-seniors-with-flat-feet",
+    date: DATE,
+    breadcrumbName: "Best Shoes for Seniors with Flat Feet",
+    title: "Best Shoes for Seniors with Flat Feet (2026)",
+    metaDescription: "Supportive shoes for seniors and older adults with flat feet: stable heels, arch support, easy hook-and-loop or slip-in closures, wide sizes, and non-slip soles.",
+    h1: "Best Shoes for Seniors and Older Adults with Flat Feet",
+    lede: "Arches often flatten further with age as the tendons that hold them up stretch, and balance gets more precious too. For older adults, the best shoe for flat feet combines real support with things that matter at any age but more so now: easy closures, stability, and grip.",
+    picksIntro: "Five walking shoes with stability, arch support, and easy closures. Three are listed with Medicare code A5500, which may make them eligible for reimbursement.",
+    picks: [
+      {
+        id: "propetLifeWalker", bestFor: "Most supportive (men)",
+        blurb: "Propét's LifeWalker is built like a medical walking shoe: a contoured heel stabilizer, an EVA midsole with arch support, a removable cushioned orthotic, and a rocker profile that eases each step. Dual hook-and-loop straps make it easy to adjust, and it's listed with Medicare code A5500.",
+        pros: ["Built-in heel stabilizer and arch support", "Removable cushioned orthotic", "Rocker sole eases each step", "Dual hook-and-loop straps; Medicare A5500 code"],
+        cons: ["Plain, orthopedic look", "Heavier than a modern sneaker", "Rocker sole takes a few days to get used to"],
+        buyFor: "Men who want maximum stability and easy straps.",
+        avoidFor: "Anyone who wants a sporty, lightweight sneaker."
+      },
+      {
+        id: "orthofeetCoral", bestFor: "Most supportive (women)",
+        blurb: "The Coral includes Orthofeet's orthotic insole with anatomical arch support, and the brand lists flat feet and overpronation among its target conditions. A soft stretch-knit upper with a seam-free interior and a wide toe box make it gentle on bunions and swelling.",
+        pros: ["Orthotic insole with anatomical arch support", "Stretch-knit upper for bunions and swelling", "Seam-free interior", "Wide toe box"],
+        cons: ["Knit upper offers less structure than leather", "Not for wet weather", "Premium price"],
+        buyFor: "Women with flat feet plus bunions, swelling, or sensitive feet.",
+        avoidFor: "Rainy climates, or anyone needing a firm leather upper."
+      },
+      {
+        id: "nb813", bestFor: "Best everyday walker (men)",
+        blurb: "A long-time favorite with thousands of ratings: a leather walking shoe with a hook-and-loop closure that's quick and easy to adjust, a soft collar, and Medicare code A5500 eligibility.",
+        pros: ["Easy hook-and-loop closure", "Leather upper, soft collar", "Medicare HCPCS A5500 eligible", "Very widely reviewed"],
+        cons: ["Moderate arch support; add an insole if needed", "Classic look", "13 mm drop feels high to some"],
+        buyFor: "Men who want an easy, dependable daily walking shoe.",
+        avoidFor: "Anyone needing strong pronation control."
+      },
+      {
+        id: "nb577", bestFor: "Best everyday walker (women)",
+        blurb: "The women's counterpart to the classic New Balance walker: a leather upper with a hook-and-loop closure, Abzorb heel cushioning, and a polyurethane midsole for stable cushioning. Reflective accents help in low light, and it's listed with Medicare code A5500.",
+        pros: ["Hook-and-loop closure", "Abzorb heel cushioning", "Stable polyurethane midsole", "Reflective accents; Medicare A5500 code"],
+        cons: ["Moderate arch support", "Basic, classic styling", "Firmer feel than modern foams"],
+        buyFor: "Women who want a stable, easy walking shoe for daily use.",
+        avoidFor: "Anyone who wants a soft, modern sneaker."
+      },
+      {
+        id: "skechersCambridge", bestFor: "Best hands-free",
+        blurb: "For anyone who finds bending down hard, Skechers' Slip-ins go on with no hands: a heel pillow holds the heel in place. This model pairs that with the Arch Fit insole system and Max Cushioning, plus a Goodyear anti-slip outsole for grip.",
+        pros: ["Hands-free entry, no bending", "Arch Fit insole system", "Max Cushioning", "Goodyear anti-slip rubber outsole; machine washable"],
+        cons: ["Less stable than a strapped walking shoe", "Knit upper, not for rain", "Tall, soft cushioning takes adjustment"],
+        buyFor: "Older adults with limited mobility or back pain who need easy entry.",
+        avoidFor: "Anyone with significant balance problems; choose a strapped shoe."
+      }
+    ],
+    sections: [
+      {
+        id: "what-to-look-for", h2: "What matters most for older adults",
+        html: `        <ul>
+          <li><strong>A firm heel counter and stable base.</strong> Stability helps balance, and balance helps prevent falls.</li>
+          <li><strong>Arch support.</strong> Built in, or via a removable insole you can replace with an <a href="/best-insoles-for-flat-feet/">orthotic</a>.</li>
+          <li><strong>Easy closures.</strong> Hook-and-loop straps or hands-free entry, if laces are difficult.</li>
+          <li><strong>A slip-resistant outsole.</strong> Rubber with good grip, not smooth or worn soles.</li>
+          <li><strong>Room for swelling.</strong> A wide toe box and adjustable straps for feet that change size through the day.</li>
+        </ul>`
+      },
+      {
+        id: "medicare", h2: "About Medicare code A5500",
+        html: `        <p>Some shoes are listed with HCPCS code A5500, a code for diabetic shoes. People with diabetes who meet Medicare's conditions may be eligible for coverage of therapeutic shoes, usually through a prescribing doctor and a qualified supplier. Buying from Amazon doesn't by itself mean you'll be reimbursed, so ask your doctor or supplier how it works for you. See our <a href="/best-shoes-for-diabetics-with-flat-feet/">diabetic shoes guide</a> for more.</p>
+        <div class="callout callout-warn">
+          <strong>Talk to a doctor if…</strong>
+          one foot is flattening more than the other, the inside of the ankle is swollen or painful, or walking is getting harder. Adult-acquired flat foot can have causes that need medical treatment, not just better shoes.
+        </div>`
+      }
+    ],
+    faq: [
+      { q: "Why do feet get flatter with age?", a: "The tendons and ligaments that support the arch, especially the posterior tibial tendon, can stretch or weaken over time, and weight gain or conditions like arthritis add strain. Sudden or one-sided flattening should be checked by a doctor." },
+      { q: "Are slip-on shoes safe for seniors?", a: "Hands-free slip-ins with a heel pillow that holds the heel securely, like Skechers Slip-ins, can be a good option. Loose slip-ons or backless slippers are a fall risk and best avoided." },
+      { q: "Does Medicare pay for shoes for flat feet?", a: "Medicare's therapeutic shoe benefit is generally for people with diabetes who meet specific conditions, not for flat feet alone. Ask your doctor whether you qualify." }
+    ],
+    related: [{ href: "/best-shoes-for-diabetics-with-flat-feet/", tag: "Diabetes", title: "Shoes for Diabetics", text: "Protective, supportive shoes for diabetic feet." }, R.walking, R.wide]
+  },
+
+  // ===================== SOCKS =====================
+  {
+    slug: "best-compression-socks-for-flat-feet",
+    date: DATE,
+    breadcrumbName: "Best Compression Socks for Flat Feet",
+    title: "Best Compression &amp; Arch-Support Socks for Flat Feet (2026)",
+    metaDescription: "Compression and arch-support socks for flat feet and plantar fasciitis: what they can and can't do, and four well-reviewed picks from Feetures, Bitly, CEP, and Swiftwick.",
+    h1: "Best Compression and Arch-Support Socks for Flat Feet",
+    lede: "Socks can't build an arch, but the right pair can add gentle support around the midfoot, reduce fatigue on long days, and keep a supportive shoe working the way it should. Here's what compression socks realistically do for flat feet, and four worth trying.",
+    picksIntro: "Four socks for different needs: everyday plantar fasciitis relief, an affordable foot sleeve, running, and a thin sock for snug shoes.",
+    picks: [
+      {
+        id: "feeturesPfRelief", bestFor: "Best for plantar fasciitis",
+        blurb: "Feetures designed this sock specifically for plantar fasciitis, with targeted compression in three zones that it says helps stretch and stabilize the plantar fascia and support the Achilles. A light cushion and a seamless toe make it comfortable for all-day wear.",
+        pros: ["Purpose-built for plantar fasciitis relief", "Targeted compression in three zones", "Seamless toe, anatomical design", "Lifetime guarantee from Feetures"],
+        cons: ["Fewer ratings than the other picks", "Crew length is warm in summer", "Pricier per pair than multipacks"],
+        buyFor: "People with flat feet and heel or arch pain who want an everyday sock.",
+        avoidFor: "Anyone looking for strong, medical-grade leg compression."
+      },
+      {
+        id: "bitlyPfSleeves", bestFor: "Best value",
+        blurb: "An open-toe compression sleeve rather than a full sock, so it can go under your regular socks or be worn alone around the house. The listing describes compression throughout the foot targeting the arch, and it has one of the largest buyer bases in the category.",
+        pros: ["Compression focused on the arch and heel", "Wear under regular socks or alone", "Very widely reviewed", "Affordable"],
+        cons: ["Sleeve style doesn't cover the toes", "Fit depends on choosing the right size from the chart", "Still needs a regular sock inside shoes"],
+        buyFor: "Anyone who wants to try arch compression without spending much.",
+        avoidFor: "People who want a single all-in-one sock."
+      },
+      {
+        id: "cepRunTall4", bestFor: "Best for runners",
+        blurb: "CEP is a long-established compression brand, and the Run Tall 4.0 is a knee-high running sock with targeted compression in the arch and ankle and a ventilated knit. Knee-high compression also helps calf fatigue, which is common with flat feet.",
+        pros: ["Targeted compression at the arch and ankle", "Knee-high for calf support", "Ventilated, breathable knit", "Respected compression brand"],
+        cons: ["Premium price", "Harder to put on than a regular sock", "Women's version is a separate listing"],
+        buyFor: "Runners and walkers with flat feet and tired calves.",
+        avoidFor: "Anyone who dislikes knee-high socks."
+      },
+      {
+        id: "swiftwickAspire", bestFor: "Best thin sock for snug shoes",
+        blurb: "When a supportive insole fills up your shoe, a thick sock can make it too tight. Swiftwick's ASPIRE is an ultra-light ankle sock with firm contoured compression and a Y-shaped heel that keeps it from slipping, leaving more room for the insole.",
+        pros: ["Firm contoured compression", "Ultra-thin, so it leaves room for an insole", "Y-shaped heel stays in place", "Made in the USA"],
+        cons: ["Minimal cushioning", "Ankle height only", "Firm compression takes getting used to"],
+        buyFor: "People wearing orthotics in close-fitting running or court shoes.",
+        avoidFor: "Anyone who wants a cushioned sock."
+      }
+    ],
+    sections: [
+      {
+        id: "what-they-do", h2: "What compression socks can (and can't) do for flat feet",
+        html: `        <p><strong>They can</strong> add a gentle hug around the midfoot that many people find supportive, reduce swelling and fatigue on long days, and help a sock stay put so your foot doesn't slide inside a supportive shoe.</p>
+        <p><strong>They can't</strong> hold up a collapsing arch the way a firm shoe or <a href="/best-insoles-for-flat-feet/">orthotic insole</a> does. Think of them as a comfort layer on top of real support, not a replacement for it.</p>
+        <div class="callout callout-warn">
+          <strong>Check with a doctor first if…</strong>
+          you have diabetes, peripheral artery disease, or poor circulation. Compression isn't right for everyone, and medical-grade compression should be fitted properly.
+        </div>`
+      },
+      {
+        id: "how-to-choose", h2: "How to choose",
+        html: `        <ul>
+          <li><strong>For heel and arch pain:</strong> a sock or sleeve with compression focused on the arch, like Feetures or Bitly.</li>
+          <li><strong>For tired calves and long runs:</strong> a knee-high compression sock like CEP.</li>
+          <li><strong>For snug shoes with orthotics:</strong> a thin sock like Swiftwick, so the shoe still fits.</li>
+          <li><strong>Sizing:</strong> compression only works in the right size. Use each brand's size chart, not just your shoe size.</li>
+        </ul>`
+      }
+    ],
+    faq: [
+      { q: "Do compression socks help flat feet?", a: "They can make feet feel more supported and less fatigued, especially on long days, but they don't correct a flat arch. They work best alongside supportive shoes or insoles." },
+      { q: "Can I wear compression socks to bed?", a: "Light foot sleeves are sometimes worn overnight, but most compression socks are designed for daytime wear. Ask a doctor before sleeping in compression, especially if you have circulation problems." },
+      { q: "Are plantar fasciitis socks worth it?", a: "Many people find targeted arch compression helps with plantar fasciitis discomfort, and they're inexpensive to try. They're a supplement to stretching and supportive footwear, not a treatment on their own." }
+    ],
+    related: [R.pf, { href: "/best-foot-care-tools-for-flat-feet/", tag: "At home", title: "Foot-Care Tools", text: "Rollers, slant boards, and night splints." }, R.insoles]
   }
 ];
 

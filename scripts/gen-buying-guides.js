@@ -39,12 +39,19 @@ function productCard(pick, rank) {
   const p = PRODUCTS[pick.id];
   if (!p) throw new Error(`Unknown product id "${pick.id}"`);
   const url = amazonUrl(p.asin);
-  return `<div class="product-card" id="${pick.id}">
-        <div class="product-card-header">
-          <a class="product-photo product-monogram" href="${url}" rel="sponsored nofollow noopener" target="_blank">
+  // p.img: a product photo taken from Amazon SiteStripe (stored under
+  // /assets/images/products/). Without one, a brand tile stands in.
+  const photo = p.img
+    ? `<div class="product-photo">
+            <a href="${url}" rel="sponsored nofollow noopener" target="_blank"><img src="${p.img}" alt="${stripTags(p.name)}" width="240" height="160" loading="lazy">${NEW_TAB}</a>
+          </div>`
+    : `<a class="product-photo product-monogram" href="${url}" rel="sponsored nofollow noopener" target="_blank">
             <span class="mono-brand">${p.brand}</span>
             <span class="mono-kind">${p.kind}</span>${NEW_TAB}
-          </a>
+          </a>`;
+  return `<div class="product-card" id="${pick.id}">
+        <div class="product-card-header">
+          ${photo}
           <div>
             <h3><span class="rank-badge">${rank}</span>${p.name}</h3>
             <p><span class="best-for">${pick.bestFor}</span></p>
