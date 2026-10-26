@@ -114,10 +114,6 @@ const PRODUCTS = {
     asin: "B08LLWGWFX", img: "/assets/images/products/nb-888-kids.webp", brand: "New Balance", name: "New Balance 888 V2 Hook &amp; Loop", kind: "Kids' running shoe",
     specs: [["For", "Little &amp; big kids"], ["Midsole", "ABZORB cushioning with compression resistance"], ["Upper", "Suede and mesh"], ["Closure", "Hook-and-loop"]]
   },
-  nb680Kids: {
-    asin: "B0BK8KMTS3", brand: "New Balance", name: "New Balance 680 V6 Hook &amp; Loop", kind: "Kids' running shoe",
-    specs: [["For", "Little &amp; big kids"], ["Midsole", "ABZORB cushioning"], ["Upper", "Leather and open mesh"], ["Closure", "Hook-and-loop"]]
-  },
 
   // Court
   asicsGelResolution: {
@@ -611,7 +607,7 @@ const PAGES = [
     metaDescription: "Supportive shoes for kids with flat feet: stable heel counters, cushioned midsoles, and secure closures, plus when a child's flat feet are normal and when to see a doctor.",
     h1: "Best Kids' Shoes for Flat Feet",
     lede: "First, the reassuring part: most young children have flat-looking feet, and most grow out of it. But if your child's feet ache, tire quickly, or the shoes wear unevenly, a well-made shoe with a stable heel can make everyday play more comfortable.",
-    picksIntro: "Three proven, widely available kids' shoes with stable heels and supportive builds. Bring any concerns to a pediatrician first.",
+    picksIntro: "Two proven, widely available kids' shoes with stable heels and supportive builds. Bring any concerns to a pediatrician first.",
     picks: [
       {
         id: "asicsGt1000Kids", bestFor: "Most supportive (big kids)",
@@ -628,14 +624,6 @@ const PAGES = [
         cons: ["Not a dedicated stability shoe", "Suede gets scuffed on the playground"],
         buyFor: "Most kids with flexible flat feet who need an everyday school and play shoe.",
         avoidFor: "Kids with a diagnosed condition who need an orthotic-specific shoe; follow your clinician's advice."
-      },
-      {
-        id: "nb680Kids", bestFor: "Best value",
-        blurb: "A simpler, typically cheaper New Balance with the same ABZORB cushioning and a leather-and-mesh upper with stitched reinforcements, which New Balance says is designed for support and durability. A good school-shoe pick when growing feet mean frequent replacements.",
-        pros: ["ABZORB cushioning", "Leather and mesh upper with reinforced toe", "Hook-and-loop closure", "Usually lower priced"],
-        cons: ["Less structured than the GT-1000", "Fewer reviews than the 888", "Basic insole"],
-        buyFor: "Parents who need a solid everyday shoe and replace them often.",
-        avoidFor: "Kids who need maximum heel control."
       }
     ],
     sections: [
