@@ -7,10 +7,9 @@
  *   node scripts/gen-buying-guides.js            generate every page in the data file
  *   node scripts/gen-buying-guides.js <slug>     generate just one
  *
- * Product cards deliberately show no Amazon product photos or Amazon star
- * ratings/prices: the Associates agreement only allows those via SiteStripe
- * or the Product Advertising API, and prices/ratings go stale. A brand tile
- * links to the listing instead.
+ * Product cards show the listing's main photo (the image SiteStripe serves)
+ * when the product has `img`, else a brand tile. They show no Amazon star
+ * ratings or prices: those go stale.
  */
 "use strict";
 

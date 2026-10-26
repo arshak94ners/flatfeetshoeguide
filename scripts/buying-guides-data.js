@@ -13,103 +13,105 @@ const TAG = "flatfeetshoeg-20";
 const DATE = "2026-10-26";
 
 // ---------- Products ----------
-// kind: short label shown on the brand tile. specs: [label, value] rows.
+// img: the listing's main photo, saved from Amazon on 2026-10-26 as a 480x320
+// webp. kind: label on the brand tile shown when there is no img.
+// specs: [label, value] rows.
 const PRODUCTS = {
   // Hiking
   merrellMoab3Men: {
-    asin: "B098KWS49L", brand: "Merrell", name: "Merrell Moab 3 (Men's)", kind: "Hiking shoe",
+    asin: "B098KWS49L", img: "/assets/images/products/merrell-moab-3-men.webp", brand: "Merrell", name: "Merrell Moab 3 (Men's)", kind: "Hiking shoe",
     specs: [["For", "Men"], ["Support", "Contoured Kinetic Fit footbed, heel Air Cushion"], ["Insole", "Removable"], ["Outsole", "Vibram TC5+"]]
   },
   merrellMoab3Women: {
-    asin: "B0BCR19BZ6", brand: "Merrell", name: "Merrell Moab 3 (Women's)", kind: "Hiking shoe",
+    asin: "B0BCR19BZ6", img: "/assets/images/products/merrell-moab-3-women.webp", brand: "Merrell", name: "Merrell Moab 3 (Women's)", kind: "Hiking shoe",
     specs: [["For", "Women"], ["Support", "Contoured Kinetic Fit footbed with reinforced heel"], ["Insole", "Removable"], ["Extras", "Protective toe cap, bellows tongue"]]
   },
   keenTarghee3Mid: {
-    asin: "B01N23HMEY", brand: "KEEN", name: "KEEN Targhee 3 Mid Waterproof", kind: "Hiking boot",
+    asin: "B01N23HMEY", img: "/assets/images/products/keen-targhee-3-mid.webp", brand: "KEEN", name: "KEEN Targhee 3 Mid Waterproof", kind: "Hiking boot",
     specs: [["For", "Men"], ["Support", "External support shank, heel cradle, mid-cut ankle"], ["Insole", "Removable, with arch support"], ["Fit", "KEEN Original Fit, roomy toe box"]]
   },
   obozSawtoothX: {
-    asin: "B09RSG13XP", brand: "Oboz", name: "Oboz Sawtooth X Low", kind: "Hiking shoe",
+    asin: "B09RSG13XP", img: "/assets/images/products/oboz-sawtooth-x.webp", brand: "Oboz", name: "Oboz Sawtooth X Low", kind: "Hiking shoe",
     specs: [["For", "Men"], ["Support", "O FIT insole: molded shell, deep heel cup"], ["Heel", "TPU heel counter"], ["Drop", "8 mm"]]
   },
   salomonXUltra360: {
-    asin: "B0D8GJK9ZT", brand: "Salomon", name: "Salomon X Ultra 360 GORE-TEX", kind: "Hiking shoe",
+    asin: "B0D8GJK9ZT", img: "/assets/images/products/salomon-xultra-360.webp", brand: "Salomon", name: "Salomon X Ultra 360 GORE-TEX", kind: "Hiking shoe",
     specs: [["For", "Men"], ["Support", "Stability-focused low hiker"], ["Waterproof", "GORE-TEX"], ["Closure", "Bungee quick-lace"]]
   },
 
   // Dress
   vionicUptownLoafer: {
-    asin: "B0GNB9B5ZD", brand: "Vionic", name: "Vionic Uptown Loafer", kind: "Women's loafer",
+    asin: "B0GNB9B5ZD", img: "/assets/images/products/vionic-uptown-loafer.webp", brand: "Vionic", name: "Vionic Uptown Loafer", kind: "Women's loafer",
     specs: [["For", "Women"], ["Support", "Built-in VIO MOTION orthotic footbed, deep heel cup"], ["Heel height", "About 1.1 in"], ["Insole", "Removable EVA"]]
   },
   orthofeetLincolnCenter: {
-    asin: "B07CC47PFP", brand: "Orthofeet", name: "Orthofeet Lincoln Center Oxford", kind: "Men's oxford",
+    asin: "B07CC47PFP", img: "/assets/images/products/orthofeet-lincoln-center.webp", brand: "Orthofeet", name: "Orthofeet Lincoln Center Oxford", kind: "Men's oxford",
     specs: [["For", "Men"], ["Support", "Orthotic insole with anatomical arch support"], ["Closure", "Adjustable single strap"], ["Fit", "Wide toe box"]]
   },
   rockportStyleLeader2: {
-    asin: "B09JTGNH49", brand: "Rockport", name: "Rockport Style Leader 2 Apron Toe", kind: "Men's dress shoe",
+    asin: "B09JTGNH49", img: "/assets/images/products/rockport-style-leader-2.webp", brand: "Rockport", name: "Rockport Style Leader 2 Apron Toe", kind: "Men's dress shoe",
     specs: [["For", "Men"], ["Support", "Cushioned heel; fits your own orthotic"], ["Insole", "Removable memory foam"], ["Sizes", "Extended sizes and widths"]]
   },
   clarksTildenPlain: {
-    asin: "B00SMJHB6C", brand: "Clarks", name: "Clarks Tilden Plain Oxford", kind: "Men's oxford",
+    asin: "B00SMJHB6C", img: "/assets/images/products/clarks-tilden-plain.webp", brand: "Clarks", name: "Clarks Tilden Plain Oxford", kind: "Men's oxford",
     specs: [["For", "Men"], ["Upper", "Smooth leather"], ["Feel", "Lightweight, cushioned"], ["Best with", "An arch-support insert"]]
   },
   naturalizerMichelle: {
-    asin: "B0128DB2QM", brand: "Naturalizer", name: "Naturalizer Michelle Pump", kind: "Women's pump",
+    asin: "B0128DB2QM", img: "/assets/images/products/naturalizer-michelle.webp", brand: "Naturalizer", name: "Naturalizer Michelle Pump", kind: "Women's pump",
     specs: [["For", "Women"], ["Heel", "3 in, with 1/2 in platform"], ["Comfort", "Contour+ Comfort technology"], ["Upper", "Leather or patent"]]
   },
 
   // Nurses / standing all day
   danskoProfessional: {
-    asin: "B0017KUQ2Y", brand: "Dansko", name: "Dansko Professional Clog", kind: "Work clog",
+    asin: "B0017KUQ2Y", img: "/assets/images/products/dansko-professional.webp", brand: "Dansko", name: "Dansko Professional Clog", kind: "Work clog",
     specs: [["For", "Men &amp; women (EU sizing)"], ["Support", "Contoured footbed, stable inner frame"], ["Sole", "Rocker bottom, polyurethane"], ["Upper", "Leather"]]
   },
   brooksAddictionWalker2: {
-    asin: "B0BNWZ64MX", brand: "Brooks", name: "Brooks Addiction Walker 2", kind: "Walking shoe",
+    asin: "B0BNWZ64MX", img: "/assets/images/products/brooks-addiction-walker-2.webp", brand: "Brooks", name: "Brooks Addiction Walker 2", kind: "Walking shoe",
     specs: [["For", "Men &amp; women"], ["Support", "Motion control for overpronation and low arches"], ["Upper", "Leather, roomier fit"], ["Insole", "Removable"]]
   },
   brooksGlycerinGts21: {
-    asin: "B0CH1X67Q2", brand: "Brooks", name: "Brooks Glycerin GTS 21", kind: "Stability shoe",
+    asin: "B0CH1X67Q2", img: "/assets/images/products/brooks-glycerin-gts-21.webp", brand: "Brooks", name: "Brooks Glycerin GTS 21", kind: "Stability shoe",
     specs: [["For", "Women"], ["Support", "GuideRails holistic support system"], ["Cushioning", "DNA LOFT v3, max soft"], ["Recognition", "APMA Seal of Acceptance"]]
   },
   brooksGhostMax: {
-    asin: "B0BYTFJYC5", brand: "Brooks", name: "Brooks Ghost Max", kind: "Max-cushion shoe",
+    asin: "B0BYTFJYC5", img: "/assets/images/products/brooks-ghost-max.webp", brand: "Brooks", name: "Brooks Ghost Max", kind: "Max-cushion shoe",
     specs: [["For", "Women"], ["Support", "Broad base, GlideRoll Rocker"], ["Category", "Neutral"], ["Recognition", "APMA Seal; PDAC A5500 diabetic shoe"]]
   },
   skechersArchFitEasyChic: {
-    asin: "B0CLYP47RN", brand: "Skechers", name: "Skechers Arch Fit 2.0 Easy Chic", kind: "Slip-in sneaker",
+    asin: "B0CLYP47RN", img: "/assets/images/products/skechers-arch-fit-easy-chic.webp", brand: "Skechers", name: "Skechers Arch Fit 2.0 Easy Chic", kind: "Slip-in sneaker",
     specs: [["For", "Women"], ["Support", "Arch Fit insole system"], ["Entry", "Hands-free Slip-ins, heel pillow"], ["Care", "Machine washable"]]
   },
 
   // Slippers
   vionicGemma: {
-    asin: "B07933RPCG", brand: "Vionic", name: "Vionic Gemma Mule Slipper", kind: "Women's slipper",
+    asin: "B07933RPCG", img: "/assets/images/products/vionic-gemma.webp", brand: "Vionic", name: "Vionic Gemma Mule Slipper", kind: "Women's slipper",
     specs: [["For", "Women"], ["Support", "VIO MOTION orthotic footbed, deep heel cup"], ["Recognition", "APMA Seal of Acceptance"], ["Closure", "Adjustable hook-and-loop"]]
   },
   vionicRelax: {
-    asin: "B0059DOFQI", brand: "Vionic", name: "Vionic Relax Slipper", kind: "Women's slipper",
+    asin: "B0059DOFQI", img: "/assets/images/products/vionic-relax.webp", brand: "Vionic", name: "Vionic Relax Slipper", kind: "Women's slipper",
     specs: [["For", "Women"], ["Support", "Built-in orthotic footbed"], ["Upper", "Terrycloth, open toe"], ["Closure", "Adjustable hook-and-loop"]]
   },
   orthofeetAsheville: {
-    asin: "B008BALVFE", brand: "Orthofeet", name: "Orthofeet Asheville Slipper", kind: "Men's slipper",
+    asin: "B008BALVFE", img: "/assets/images/products/orthofeet-asheville.webp", brand: "Orthofeet", name: "Orthofeet Asheville Slipper", kind: "Men's slipper",
     specs: [["For", "Men"], ["Support", "Orthotic insole with anatomical arch support"], ["Closure", "Dual fully-opening straps"], ["Lining", "Faux fur"]]
   },
   orthofeetLorin: {
-    asin: "B0DCHHPWFR", brand: "Orthofeet", name: "Orthofeet Lorin Slipper", kind: "Women's slipper",
+    asin: "B0DCHHPWFR", img: "/assets/images/products/orthofeet-lorin.webp", brand: "Orthofeet", name: "Orthofeet Lorin Slipper", kind: "Women's slipper",
     specs: [["For", "Women"], ["Support", "Orthotic insole with anatomical arch support"], ["Entry", "Hands-free slip-on"], ["Wear", "Indoor and outdoor"]]
   },
   haflingerGrizzly: {
-    asin: "B001C0Y05S", brand: "Haflinger", name: "Haflinger Grizzly GZ Clog", kind: "Wool clog slipper",
+    asin: "B001C0Y05S", img: "/assets/images/products/haflinger-grizzly.webp", brand: "Haflinger", name: "Haflinger Grizzly GZ Clog", kind: "Wool clog slipper",
     specs: [["For", "Men &amp; women (EU sizing)"], ["Support", "Cork-latex footbed that molds to the foot"], ["Upper", "Boiled wool felt"], ["Sole", "Slip-resistant rubber"]]
   },
 
   // Kids
   asicsGt1000Kids: {
-    asin: "B0CT9K56D9", brand: "ASICS", name: "ASICS GT-1000 13 Grade School", kind: "Kids' stability shoe",
+    asin: "B0CT9K56D9", img: "/assets/images/products/asics-gt-1000-kids.webp", brand: "ASICS", name: "ASICS GT-1000 13 Grade School", kind: "Kids' stability shoe",
     specs: [["For", "Big kids"], ["Support", "Kids' version of ASICS' GT-1000 stability line"], ["Cushioning", "Rearfoot GEL"], ["Closure", "Laces"]]
   },
   nb888Kids: {
-    asin: "B08LLWGWFX", brand: "New Balance", name: "New Balance 888 V2 Hook &amp; Loop", kind: "Kids' running shoe",
+    asin: "B08LLWGWFX", img: "/assets/images/products/nb-888-kids.webp", brand: "New Balance", name: "New Balance 888 V2 Hook &amp; Loop", kind: "Kids' running shoe",
     specs: [["For", "Little &amp; big kids"], ["Midsole", "ABZORB cushioning with compression resistance"], ["Upper", "Suede and mesh"], ["Closure", "Hook-and-loop"]]
   },
   nb680Kids: {
@@ -119,49 +121,49 @@ const PRODUCTS = {
 
   // Court
   asicsGelResolution: {
-    asin: "B0BG6DWJK8", brand: "ASICS", name: "ASICS Gel-Resolution", kind: "Tennis shoe",
+    asin: "B0BG6DWJK8", img: "/assets/images/products/asics-gel-resolution.webp", brand: "ASICS", name: "ASICS Gel-Resolution", kind: "Tennis shoe",
     specs: [["For", "Men &amp; women (choose on Amazon)"], ["Stability", "DYNAWALL midfoot support"], ["Fit", "DYNALACING lockdown"], ["Durability", "AHARPLUS heel rubber"]]
   },
   asicsGelRenma: {
-    asin: "B096FF7BQ3", brand: "ASICS", name: "ASICS Gel-Renma", kind: "Pickleball / indoor court",
+    asin: "B096FF7BQ3", img: "/assets/images/products/asics-gel-renma.webp", brand: "ASICS", name: "ASICS Gel-Renma", kind: "Pickleball / indoor court",
     specs: [["For", "Men"], ["Stability", "TRUSSTIC midfoot shank, wider gauge"], ["Cushioning", "Forefoot GEL"], ["Fit note", "Runs narrow (per listing)"]]
   },
   kswissExpressLight: {
-    asin: "B09X74ZJDC", brand: "K-Swiss", name: "K-Swiss Express Light Pickleball", kind: "Pickleball shoe",
+    asin: "B09X74ZJDC", img: "/assets/images/products/kswiss-express-light.webp", brand: "K-Swiss", name: "K-Swiss Express Light Pickleball", kind: "Pickleball shoe",
     specs: [["For", "Women"], ["Stability", "Built as a stability shoe for lateral moves"], ["Insole", "OrthoLite sock liner"], ["Durability", "DragGuard toe and heel"]]
   },
   skechersViperCourtPro2: {
-    asin: "B0FM48G8Y6", brand: "Skechers", name: "Skechers Viper Court Pro 2.0", kind: "Pickleball shoe",
+    asin: "B0FM48G8Y6", img: "/assets/images/products/skechers-viper-court-pro-2.webp", brand: "Skechers", name: "Skechers Viper Court Pro 2.0", kind: "Pickleball shoe",
     specs: [["For", "Men"], ["Support", "Removable Arch Fit insole"], ["Recognition", "APMA Seal of Acceptance"], ["Outsole", "Goodyear rubber"]]
   },
   nb696v5: {
-    asin: "B09YGVKDF2", brand: "New Balance", name: "New Balance 696 V5 Hard Court", kind: "Tennis shoe",
+    asin: "B09YGVKDF2", img: "/assets/images/products/nb-696v-5.webp", brand: "New Balance", name: "New Balance 696 V5 Hard Court", kind: "Tennis shoe",
     specs: [["For", "Men"], ["Fit", "Locked-down upper"], ["Outsole", "Ndurance, herringbone"], ["Surface", "Hard court"]]
   },
 
   // Foot-care tools
   theraflowRoller: {
-    asin: "B00SMJIYNG", brand: "TheraFlow", name: "TheraFlow Foot Roller", kind: "Massage roller",
+    asin: "B00SMJIYNG", img: "/assets/images/products/theraflow-roller.webp", brand: "TheraFlow", name: "TheraFlow Foot Roller", kind: "Massage roller",
     specs: [["Type", "Wooden foot roller"], ["Use", "Self-massage along the arch and sole"], ["Base", "Non-slip"]]
   },
   strongtekSlantBoard: {
-    asin: "B091CHH147", brand: "StrongTek", name: "StrongTek Slant Board", kind: "Calf stretcher",
+    asin: "B091CHH147", img: "/assets/images/products/strongtek-slant-board.webp", brand: "StrongTek", name: "StrongTek Slant Board", kind: "Calf stretcher",
     specs: [["Type", "Adjustable slant board"], ["Angles", "5 incline levels"], ["Surface", "Non-slip, with heel lip"]]
   },
   viveArchBrace: {
-    asin: "B01IBTX95E", brand: "Vive", name: "Vive Foot Arch Support Brace (Pair)", kind: "Arch brace",
+    asin: "B01IBTX95E", img: "/assets/images/products/vive-arch-brace.webp", brand: "Vive", name: "Vive Foot Arch Support Brace (Pair)", kind: "Arch brace",
     specs: [["Type", "Compression arch wrap"], ["Support", "Pouch for up to 3 gel inserts"], ["Fit", "Adjustable strap, fits in most shoes"]]
   },
   tulisHeelCups: {
-    asin: "B000MSZT4C", brand: "Tuli's", name: "Tuli's Classic Gel Heel Cups", kind: "Heel cups",
+    asin: "B000MSZT4C", img: "/assets/images/products/tulis-heel-cups.webp", brand: "Tuli's", name: "Tuli's Classic Gel Heel Cups", kind: "Heel cups",
     specs: [["Type", "Multi-cell gel heel cup"], ["Use", "Heel shock absorption in most closed shoes"], ["Material", "Latex-free gel"]]
   },
   braceabilityNightSplint: {
-    asin: "B00SSBP33C", brand: "BraceAbility", name: "BraceAbility Night Splint Sock", kind: "Night splint",
+    asin: "B00SSBP33C", img: "/assets/images/products/braceability-night-splint.webp", brand: "BraceAbility", name: "BraceAbility Night Splint Sock", kind: "Night splint",
     specs: [["Type", "Soft night splint sock"], ["Use", "Holds the foot flexed overnight"], ["Fit", "Adjustable toe strap, left or right"]]
   },
   mindBodhiToeSpacers: {
-    asin: "B07M5C72VQ", brand: "Mind Bodhi", name: "Mind Bodhi Toe Separators", kind: "Toe spacers",
+    asin: "B07M5C72VQ", img: "/assets/images/products/mind-bodhi-toe-spacers.webp", brand: "Mind Bodhi", name: "Mind Bodhi Toe Separators", kind: "Toe spacers",
     specs: [["Type", "Gel toe spacers"], ["Material", "BPA- and latex-free gel"], ["Sizing", "Women 6–10, men 7–9 (regular)"]]
   },
 
@@ -169,107 +171,107 @@ const PRODUCTS = {
 
   // Boots
   orthofeetFlorence: {
-    asin: "B0CP8HZ5TX", brand: "Orthofeet", name: "Orthofeet Florence Waterproof Boot", kind: "Women's boot",
+    asin: "B0CP8HZ5TX", img: "/assets/images/products/orthofeet-florence.webp", brand: "Orthofeet", name: "Orthofeet Florence Waterproof Boot", kind: "Women's boot",
     specs: [["For", "Women"], ["Support", "Orthotic insole with anatomical arch support"], ["Closure", "Two hook-and-loop straps"], ["Weather", "Waterproof leather"]]
   },
   blundstone500: {
-    asin: "B0030XZW0C", brand: "Blundstone", name: "Blundstone Original 500 Chelsea Boot", kind: "Chelsea boot",
+    asin: "B0030XZW0C", img: "/assets/images/products/blundstone-500.webp", brand: "Blundstone", name: "Blundstone Original 500 Chelsea Boot", kind: "Chelsea boot",
     specs: [["For", "Men &amp; women"], ["Stability", "Steel shank"], ["Cushioning", "SPS Max Comfort system"], ["Footbed", "Removable"]]
   },
   columbiaNewtonRidge: {
-    asin: "B0CT9226RW", brand: "Columbia", name: "Columbia Newton Ridge Plus II Waterproof", kind: "Hiking boot",
+    asin: "B0CT9226RW", img: "/assets/images/products/columbia-newton-ridge.webp", brand: "Columbia", name: "Columbia Newton Ridge Plus II Waterproof", kind: "Hiking boot",
     specs: [["For", "Men (wide available)"], ["Closure", "Lace-up"], ["Weather", "Waterproof leather and mesh"], ["Traction", "Omni-Grip"]]
   },
   sorelCaribou: {
-    asin: "B001OTYZC0", brand: "Sorel", name: "Sorel Caribou Waterproof", kind: "Winter boot",
+    asin: "B001OTYZC0", img: "/assets/images/products/sorel-caribou.webp", brand: "Sorel", name: "Sorel Caribou Waterproof", kind: "Winter boot",
     specs: [["For", "Men"], ["Liner", "Removable 9 mm felt inner boot"], ["Shell", "Vulcanized rubber, seam-sealed"], ["Use", "Snow and deep cold"]]
   },
   timberlandPremium6: {
-    asin: "B09PLFY7ZB", brand: "Timberland", name: "Timberland Premium 6-Inch Waterproof", kind: "Classic boot",
+    asin: "B09PLFY7ZB", img: "/assets/images/products/timberland-premium-6.webp", brand: "Timberland", name: "Timberland Premium 6-Inch Waterproof", kind: "Classic boot",
     specs: [["For", "Men (wide available)"], ["Comfort", "Anti-fatigue system adopted from Timberland PRO"], ["Weather", "Seam-sealed waterproof leather"], ["Insulation", "PrimaLoft"]]
   },
 
   // Basketball
   uaLockdown7: {
-    asin: "B0F8BX23S6", brand: "Under Armour", name: "Under Armour Lockdown 7", kind: "Basketball shoe",
+    asin: "B0F8BX23S6", img: "/assets/images/products/ua-lockdown-7.webp", brand: "Under Armour", name: "Under Armour Lockdown 7", kind: "Basketball shoe",
     specs: [["For", "Men &amp; women"], ["Upper", "Mesh with leather and film support overlays"], ["Midsole", "EVA"], ["Outsole", "Herringbone rubber"]]
   },
   uaJet23: {
-    asin: "B0BGR6L3L3", brand: "Under Armour", name: "Under Armour Jet '23", kind: "Basketball shoe",
+    asin: "B0BGR6L3L3", img: "/assets/images/products/ua-jet-23.webp", brand: "Under Armour", name: "Under Armour Jet '23", kind: "Basketball shoe",
     specs: [["For", "Men"], ["Upper", "Mixed-material, targeted support"], ["Midsole", "Full-length Micro G"], ["Sockliner", "Plush foam"]]
   },
   nikeGiannisImmortality4: {
-    asin: "B0DZXMRPR8", brand: "Nike", name: "Nike Giannis Immortality 4", kind: "Basketball shoe",
+    asin: "B0DZXMRPR8", img: "/assets/images/products/nike-giannis-immortality-4.webp", brand: "Nike", name: "Nike Giannis Immortality 4", kind: "Basketball shoe",
     specs: [["For", "Men &amp; women"], ["Lockdown", "Internal containment system"], ["Heel", "Padded heel for sudden stops"], ["Traction", "Multidirectional"]]
   },
   nikePrecision7: {
-    asin: "B0D945K7H7", brand: "Nike", name: "Nike Precision 7", kind: "Basketball shoe",
+    asin: "B0D945K7H7", img: "/assets/images/products/nike-precision-7.webp", brand: "Nike", name: "Nike Precision 7", kind: "Basketball shoe",
     specs: [["For", "Men &amp; women"], ["Midsole", "Sculpted foam"], ["Collar", "Plush foam collar and tongue"], ["Traction", "Herringbone"]]
   },
   adidasDameCertified: {
-    asin: "B0B5YYXYZ6", brand: "adidas", name: "adidas Dame Certified", kind: "Basketball shoe",
+    asin: "B0B5YYXYZ6", img: "/assets/images/products/adidas-dame-certified.webp", brand: "adidas", name: "adidas Dame Certified", kind: "Basketball shoe",
     specs: [["For", "Men &amp; women"], ["Cushioning", "Bounce"], ["Profile", "Low to the ground"], ["Outsole", "Rubber"]]
   },
 
   // Golf
   footjoyFuel: {
-    asin: "B0D2NPHFPY", brand: "FootJoy", name: "FootJoy FJ Fuel Spikeless", kind: "Golf shoe",
+    asin: "B0D2NPHFPY", img: "/assets/images/products/footjoy-fuel.webp", brand: "FootJoy", name: "FootJoy FJ Fuel Spikeless", kind: "Golf shoe",
     specs: [["For", "Men"], ["Stability", "Patented Stability Bridge"], ["Midsole", "Stratolite EVA"], ["Fit", "Standard forefoot, slightly narrow heel"]]
   },
   eccoBiomHybrid3: {
-    asin: "B085VSN242", brand: "ECCO", name: "ECCO Biom Hybrid 3 GORE-TEX", kind: "Golf shoe",
+    asin: "B085VSN242", img: "/assets/images/products/ecco-biom-hybrid-3.webp", brand: "ECCO", name: "ECCO Biom Hybrid 3 GORE-TEX", kind: "Golf shoe",
     specs: [["For", "Men"], ["Outsole", "Tri-Fi-Grip with stability zone"], ["Insole", "Removable Ortholite (extra-width option)"], ["Weather", "GORE-TEX"]]
   },
   skechersGoGolfArchFit: {
-    asin: "B0D4JTL42T", brand: "Skechers", name: "Skechers GO GOLF Arch Fit", kind: "Golf shoe",
+    asin: "B0D4JTL42T", img: "/assets/images/products/skechers-go-golf-arch-fit.webp", brand: "Skechers", name: "Skechers GO GOLF Arch Fit", kind: "Golf shoe",
     specs: [["For", "Men"], ["Support", "Arch Fit insole"], ["Cushioning", "ULTRA GO"], ["Outsole", "Spikeless Goodyear rubber"]]
   },
   nbFreshFoamLinksPro: {
-    asin: "B08NYV9RWZ", brand: "New Balance", name: "New Balance Fresh Foam LinksPro", kind: "Golf shoe",
+    asin: "B08NYV9RWZ", img: "/assets/images/products/nb-fresh-foam-links-pro.webp", brand: "New Balance", name: "New Balance Fresh Foam LinksPro", kind: "Golf shoe",
     specs: [["For", "Men"], ["Structure", "TPU eyestay and exoskeleton outsole"], ["Midsole", "Fresh Foam, 10 mm drop"], ["Cleats", "Removable"]]
   },
   adidasCodechaos: {
-    asin: "B096JNTTTF", brand: "adidas", name: "adidas Codechaos Spikeless", kind: "Golf shoe",
+    asin: "B096JNTTTF", img: "/assets/images/products/adidas-codechaos.webp", brand: "adidas", name: "adidas Codechaos Spikeless", kind: "Golf shoe",
     specs: [["For", "Men"], ["Midsole", "BOOST foam"], ["Outsole", "CHAOS Traction with TwistGrip"], ["Weather", "Waterproof"]]
   },
 
   // Seniors
   propetLifeWalker: {
-    asin: "B000BW19ZW", brand: "Propét", name: "Propét LifeWalker Strap", kind: "Walking shoe",
+    asin: "B000BW19ZW", img: "/assets/images/products/propet-life-walker.webp", brand: "Propét", name: "Propét LifeWalker Strap", kind: "Walking shoe",
     specs: [["For", "Men"], ["Support", "Contoured heel stabilizer, arch-support midsole"], ["Insole", "Removable cushioned orthotic"], ["Closure", "Dual hook-and-loop straps"]]
   },
   orthofeetCoral: {
-    asin: "B095NB3MFJ", brand: "Orthofeet", name: "Orthofeet Coral Sneaker", kind: "Women's sneaker",
+    asin: "B095NB3MFJ", img: "/assets/images/products/orthofeet-coral.webp", brand: "Orthofeet", name: "Orthofeet Coral Sneaker", kind: "Women's sneaker",
     specs: [["For", "Women"], ["Support", "Orthotic insole with anatomical arch support"], ["Upper", "Stretch knit, seam-free"], ["Fit", "Wide toe box"]]
   },
   nb813: {
-    asin: "B0BZ5R6TFW", brand: "New Balance", name: "New Balance 813 Hook &amp; Loop", kind: "Walking shoe",
+    asin: "B0BZ5R6TFW", img: "/assets/images/products/nb-813.webp", brand: "New Balance", name: "New Balance 813 Hook &amp; Loop", kind: "Walking shoe",
     specs: [["For", "Men"], ["Closure", "Hook-and-loop"], ["Upper", "Leather, soft collar"], ["Medicare", "HCPCS A5500 eligible"]]
   },
   nb577: {
-    asin: "B003UHUM5S", brand: "New Balance", name: "New Balance 577 Hook &amp; Loop", kind: "Walking shoe",
+    asin: "B003UHUM5S", img: "/assets/images/products/nb-577.webp", brand: "New Balance", name: "New Balance 577 Hook &amp; Loop", kind: "Walking shoe",
     specs: [["For", "Women"], ["Cushioning", "Abzorb heel"], ["Midsole", "Polyurethane, stable"], ["Medicare", "HCPCS A5500 eligible"]]
   },
   skechersCambridge: {
-    asin: "B0CTNLLT6F", brand: "Skechers", name: "Skechers Max Cushioning Arch Fit 2.0 Slip-ins", kind: "Slip-in sneaker",
+    asin: "B0CTNLLT6F", img: "/assets/images/products/skechers-cambridge.webp", brand: "Skechers", name: "Skechers Max Cushioning Arch Fit 2.0 Slip-ins", kind: "Slip-in sneaker",
     specs: [["For", "Women"], ["Support", "Arch Fit insole system"], ["Entry", "Hands-free, heel pillow"], ["Outsole", "Goodyear anti-slip rubber"]]
   },
 
   // Socks
   feeturesPfRelief: {
-    asin: "B08CF3B4SR", brand: "Feetures", name: "Feetures Plantar Fasciitis Relief Crew", kind: "PF relief sock",
+    asin: "B08CF3B4SR", img: "/assets/images/products/feetures-pf-relief.webp", brand: "Feetures", name: "Feetures Plantar Fasciitis Relief Crew", kind: "PF relief sock",
     specs: [["Type", "Light-cushion crew sock"], ["Compression", "Targeted, three zones"], ["Toe", "Seamless"]]
   },
   bitlyPfSleeves: {
-    asin: "B08HYKCMHR", brand: "Bitly", name: "Bitly Plantar Fasciitis Compression Sleeves", kind: "Foot sleeves",
+    asin: "B08HYKCMHR", img: "/assets/images/products/bitly-pf-sleeves.webp", brand: "Bitly", name: "Bitly Plantar Fasciitis Compression Sleeves", kind: "Foot sleeves",
     specs: [["Type", "Open-toe compression foot sleeve"], ["Support", "Compression through the arch"], ["Sizing", "By the brand's size chart"]]
   },
   cepRunTall4: {
-    asin: "B0BHMVF681", brand: "CEP", name: "CEP The Run Tall Compression Socks 4.0", kind: "Running compression",
+    asin: "B0BHMVF681", img: "/assets/images/products/cep-run-tall-4.webp", brand: "CEP", name: "CEP The Run Tall Compression Socks 4.0", kind: "Running compression",
     specs: [["Type", "Knee-high compression sock"], ["Compression", "Targeted at the arch and ankle"], ["For", "Men (women's version sold separately)"]]
   },
   swiftwickAspire: {
-    asin: "B0829FB29Y", brand: "Swiftwick", name: "Swiftwick ASPIRE Ankle Socks", kind: "Compression ankle sock",
+    asin: "B0829FB29Y", img: "/assets/images/products/swiftwick-aspire.webp", brand: "Swiftwick", name: "Swiftwick ASPIRE Ankle Socks", kind: "Compression ankle sock",
     specs: [["Type", "Ultra-light ankle sock, 3-pack"], ["Compression", "Firm contoured"], ["Heel", "Y-shaped for a snug fit"]]
   }
 };
