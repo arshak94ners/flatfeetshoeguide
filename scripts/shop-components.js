@@ -19,8 +19,9 @@ function escAmp(s) {
  *   name   product name (HTML ok)    label short "best for" line
  *   more   optional on-site link for the name (an #anchor or a review URL)
  *   brand  shown on a tile instead of the photo when there is no img
+ *   cta, newTab  button text and its screen-reader suffix (translated pages)
  */
-function pickCard({ href, img, name, label, more, brand }) {
+function pickCard({ href, img, name, label, more, brand, cta = "Check Price", newTab = NEW_TAB }) {
   const url = escAmp(href);
   const title = more ? `<a href="${more}">${name}</a>` : name;
   const visual = img
@@ -31,7 +32,7 @@ function pickCard({ href, img, name, label, more, brand }) {
           <div class="pick-body">
             <span class="pick-label">${label}</span>
             <p class="pick-name">${title}</p>
-            <a class="btn btn-primary btn-sm" href="${url}" ${REL}>Check Price${NEW_TAB}</a>
+            <a class="btn btn-primary btn-sm" href="${url}" ${REL}>${cta}${newTab}</a>
           </div>
         </li>`;
 }
