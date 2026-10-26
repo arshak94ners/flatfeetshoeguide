@@ -16,6 +16,7 @@
 const fs = require("fs");
 const path = require("path");
 const { PAGES, PRODUCTS, TAG } = require("./buying-guides-data");
+const { NEW_TAB, pickList } = require("./shop-components");
 
 const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://flatfeetshoeguide.com";
@@ -31,8 +32,6 @@ function stripTags(s) {
 function jsonld(obj) {
   return `<script type="application/ld+json">\n${JSON.stringify(obj, null, 2)}\n</script>`;
 }
-
-const NEW_TAB = '<span class="visually-hidden"> (opens in a new tab)</span>';
 
 function productCard(pick, rank) {
   const p = PRODUCTS[pick.id];
@@ -57,6 +56,7 @@ function productCard(pick, rank) {
             <dl class="spec-list">
 ${p.specs.map(([k, v]) => `              <dt>${k}</dt><dd>${v}</dd>`).join("\n")}
             </dl>
+            <a class="btn btn-primary btn-sm card-cta" href="${url}" rel="sponsored nofollow noopener" target="_blank">Check Price on Amazon${NEW_TAB}</a>
           </div>
         </div>
         <p>${pick.blurb}</p>
@@ -91,28 +91,14 @@ ${pick.cons.map((x) => `              <li>${x}</li>`).join("\n")}
       </div>`;
 }
 
+// A photo strip of every pick, so each buy button is visible on a phone
+// (the old summary table pushed them into a sideways-scrolling column).
 function quickPicks(page) {
-  const rows = page.picks
-    .map((pick, i) => {
-      const p = PRODUCTS[pick.id];
-      return `            <tr>
-              <td><a href="#${pick.id}">${i + 1}. ${p.name}</a></td>
-              <td>${pick.bestFor}</td>
-              <td><a href="${amazonUrl(p.asin)}" rel="sponsored nofollow noopener" target="_blank">See on Amazon${NEW_TAB}</a></td>
-            </tr>`;
-    })
-    .join("\n");
-  return `<div class="table-wrap quick-picks">
-        <table class="compare">
-          <caption class="visually-hidden">Quick picks summary</caption>
-          <thead>
-            <tr><th scope="col">Pick</th><th scope="col">Best for</th><th scope="col">Shop</th></tr>
-          </thead>
-          <tbody>
-${rows}
-          </tbody>
-        </table>
-      </div>`;
+  const picks = page.picks.map((pick, i) => {
+    const p = PRODUCTS[pick.id];
+    return { href: amazonUrl(p.asin), img: p.img, brand: p.brand, name: p.name, label: `#${i + 1} &middot; ${pick.bestFor}`, more: `#${pick.id}` };
+  });
+  return pickList(picks, { ranked: true });
 }
 
 const METHOD = `<div class="callout">

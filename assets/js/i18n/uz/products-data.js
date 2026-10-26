@@ -24,7 +24,7 @@ var FFSG_PRODUCTS = {
     categoryLabel: "Yugurish",
     img: "/assets/images/products/brooks-adrenaline-gts.webp",
     alt: "Brooks Adrenaline GTS stabillik yugurish poyabzali",
-    review: "/uz/shoe-reviews/example-shoe-review/",
+    review: "/uz/shoe-reviews/brooks-adrenaline-gts-review/",
     href: "https://www.amazon.com/gp/aw/d/B0DM37CZS8?_encoding=UTF8&linkCode=ll2&tag=flatfeetshoeg-20&linkId=544401b6d8ddfd973c1d03638211f1a8&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Yengil-o'rtacha ortiqcha pronatsiya, kundalik masofalar",
     supportType: "Yo'naltirilgan stabillik (GuideRails)",

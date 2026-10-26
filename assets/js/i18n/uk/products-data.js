@@ -24,7 +24,7 @@ var FFSG_PRODUCTS = {
     categoryLabel: "Біг",
     img: "/assets/images/products/brooks-adrenaline-gts.webp",
     alt: "Brooks Adrenaline GTS — стабілізуючі кросівки для бігу",
-    review: "/uk/shoe-reviews/example-shoe-review/",
+    review: "/uk/shoe-reviews/brooks-adrenaline-gts-review/",
     href: "https://www.amazon.com/gp/aw/d/B0DM37CZS8?_encoding=UTF8&linkCode=ll2&tag=flatfeetshoeg-20&linkId=544401b6d8ddfd973c1d03638211f1a8&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Легка-помірна гіперпронація, щоденні пробіжки",
     supportType: "Спрямована стабільність (GuideRails)",

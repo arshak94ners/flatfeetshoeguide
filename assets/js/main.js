@@ -85,3 +85,34 @@
     { passive: true }
   );
 })();
+
+(function () {
+  "use strict";
+
+  // Single-product reviews: once the main "Check Price" button scrolls out of
+  // view, a slim buy bar slides up from the bottom (phones only, via CSS).
+  if (!/\/shoe-reviews\/[^/]+\/$/.test(location.pathname)) return;
+  var source = document.querySelector('.product-card a.btn-primary[rel~="sponsored"]');
+  var title = document.querySelector(".product-card h3");
+  if (!source || !title || !("IntersectionObserver" in window)) return;
+
+  var bar = document.createElement("div");
+  bar.className = "sticky-cta";
+  var name = document.createElement("span");
+  name.className = "sticky-cta-name";
+  name.textContent = title.textContent;
+  var button = source.cloneNode(true);
+  button.classList.add("btn-sm");
+  button.tabIndex = -1;
+  bar.setAttribute("aria-hidden", "true");
+  bar.appendChild(name);
+  bar.appendChild(button);
+  document.body.appendChild(bar);
+  document.documentElement.classList.add("has-sticky-cta");
+
+  new IntersectionObserver(function (entries) {
+    var e = entries[0];
+    // Show only after the button has scrolled up past the top of the screen.
+    bar.classList.toggle("is-visible", !e.isIntersecting && e.boundingClientRect.top < 0);
+  }).observe(source);
+})();

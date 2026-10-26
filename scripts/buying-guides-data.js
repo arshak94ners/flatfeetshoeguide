@@ -805,7 +805,7 @@ const PAGES = [
     sections: [
       {
         id: "where-to-start", h2: "Which tool should you start with?",
-        html: `        <table class="compare">
+        html: `        <div class="table-wrap"><table class="compare">
           <thead><tr><th scope="col">If your main problem is…</th><th scope="col">Start with</th></tr></thead>
           <tbody>
             <tr><td>Aching arches at the end of the day</td><td>Foot roller</td></tr>
@@ -815,7 +815,7 @@ const PAGES = [
             <tr><td>Shoes with no room for an insole</td><td>Arch brace</td></tr>
             <tr><td>Building foot strength</td><td>Toe spacers + <a href="/guides/flat-feet-exercises-and-stretches/">exercises</a></td></tr>
           </tbody>
-        </table>`
+        </table></div>`
       },
       {
         id: "tools-plus-shoes", h2: "Tools work best alongside good shoes",
